@@ -47,6 +47,33 @@
         <p>If you encounter any issues, please use the "Report Issue" button located at the bottom of every page or send a detailed description to our support email.</p>
 
         <a href="index.html" class="help-button">Back to Home</a>
+
+        <h2>Number Summation</h2>
+<p>
+    <label for="number1">Number 1:</label>
+    <input type="text" id="number1">
+</p>
+<p>
+    <label for="number2">Number 2:</label>
+    <input type="text" id="number2">
+</p>
+<button onclick="calculateSum()">Calculate Sum</button>
+<p id="result"></p>
+
     </main>
 </body>
 </html>
+<script>
+    function calculateSum() {
+        var num1 = parseFloat(document.getElementById('number1').value);
+        var num2 = parseFloat(document.getElementById('number2').value);
+
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById('result').textContent = "Please enter valid numbers!";
+            return;
+        }
+
+        var sum = num1 + num2;
+        document.getElementById('result').textContent = "Sum: " + sum;
+    }
+</script>
