@@ -4,23 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Basic Home Page</title>
+    
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0; /* Remove margin to extend the header to the edges */
+            padding: 0; /* Remove padding for the body */
             background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #007BFF;
             color: #fff;
-            padding: 20px;
+            /* padding: 5px; */
             text-align: center;
+            position: fixed; /* Fixed position for the header */
+            top: 0; /* Position at the top */
+            width: 100%; /* Full width */
         }
+
+        subheader {
+           /* Customize subheader background color */
+            /* color: #fff; */
+            background-color: #98caff;
+            
+            text-align: center;
+            position: fixed;
+            top: 60px; /* Adjust top position to your preference */
+            width: 100%;
+        }
+
         main {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
+            margin-top: 80px; /* Add margin-top to prevent content from being hidden under the header */
         }
         a {
             color: #007BFF;
@@ -48,11 +66,15 @@
         }
 
     </style>
+
 </head>
 <body>
     <header>
         <h1>Welcome to My Basic Home Page</h1>
     </header>
+    <subheader>
+        <h2>This is the Subheader</h2>
+    </subheader>
     <main>
         <h2>About This Page</h2>
         <p>This is a basic HTML home page with a heading, subheading, and some other elements. Feel free to customize it to your liking!</p>
