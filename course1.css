@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+body{
+padding:0px;
+margin:0px;
+}
+
 .website .div {
     background-color: #ffffff;
     width: 100%;
