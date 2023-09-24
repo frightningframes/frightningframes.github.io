@@ -1,5 +1,5 @@
 body {
-    background: #D1E2F5;
+    background: #C5D3FE;
     margin: 0;
     display: flex;
     align-items: stretch;
@@ -34,6 +34,12 @@ body {
     height: 71%;
 }
 
+.banner{
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 8%;
+}
+
 .text-wrapper {
     color: #1E1E1E;
     font-family: Inter;
@@ -42,7 +48,7 @@ body {
     font-weight: 600;
     line-height: normal;
     border-radius: 6px;
-    background: rgba(10, 107, 199, 0.75);
+    background: #5272F9;
     width: 90%;
     display: flex;
     text-align: center;
@@ -59,7 +65,7 @@ body {
     font-weight: 600;
     line-height: normal;
     border-radius: 6px;
-    background: rgba(10, 107, 199, 0.75);
+    background: #5272F9;
     width: 90%;
     display: flex;
     text-align: center;
