@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,17 @@
         /* Reset default margin and padding */
         body {
             margin: 0;
-            padding: 0;
-            overflow: hidden; /* Prevent scrollbars */
-            display: flex; /* Use flexbox to create a horizontal layout */
+            padding: 30px;
+            overflow: hidden;
+            /* Prevent scrollbars */
+            display: flex;
+            /* Use flexbox to create a horizontal layout */
         }
 
         /* Left card (your existing code) */
         #left-card {
-            flex: 1; /* Take up 50% of the available space */
+            flex: 1;
+            /* Take up 50% of the available space */
             background: white;
             padding: 20px;
         }
@@ -26,7 +30,7 @@
             align-items: center;
             width: 50vw;
             height: 50vh;
-            border: 1px solid black; 
+            border: 1px solid black;
         }
 
         #container {
@@ -38,7 +42,8 @@
 
         /* Right card (blank) */
         #right-card {
-            flex: 1; /* Take up 50% of the available space */
+            flex: 1;
+            /* Take up 50% of the available space */
             height: 100vh;
             /* You can set your desired background color here */
             display: flex;
@@ -47,11 +52,14 @@
         }
 
         #right-card img {
-            max-width: 50vw; /* Ensure the image doesn't exceed the card's width */
-            max-height: 100vh; /* Ensure the image doesn't exceed the card's height */
-           object-fit: cover;
-           object-fit: fill;
+            max-width: 50vw;
+            /* Ensure the image doesn't exceed the card's width */
+            max-height: 100vh;
+            /* Ensure the image doesn't exceed the card's height */
+            object-fit: cover;
+            object-fit: fill;
         }
+
         /* #background-image {
             width: 100%;
             height: 100%;
@@ -75,7 +83,7 @@
         }
 
         #subtitle {
-          
+
             left: 100px;
             top: 25%;
             bottom: 10%;
@@ -108,7 +116,7 @@
             height: 5vh;
             left: 50px;
             position: absolute;
-            background: #386CCA;
+            background: #5272F9;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 20px;
             border: 1px #2E5CAF solid;
@@ -139,46 +147,48 @@
             text-decoration: none;
         }
 
-        
+
         .sphere {
             object-fit: fill;
             display: flex;
-            width: 50vw;
+            width: 40vw;
+            margin-right: 5%;
+            border-radius: 25px;
         }
 
-        .logo{
+        .logo {
             height: 20vh;
             margin-left: 250px;
-            
+
         }
     </style>
 </head>
+
 <body>
 
-    <div id="cont"></div>
-    
     <div id="left-card">
         <div id="container">
-        <div id="background-image">
-            <img class="logo" src="assets/logo.jpg">
-        </div>
-        
-        <div id="subtitle">Welcome to the ScholarSphere</div>
-        <input type="text" class="input-field" style="top: 30%;" placeholder="Enter your email">
-        <input type="password" class="input-field" style="top: 40%;" placeholder="Enter your password">
-        <button class="button" style="top: 50%;" onclick="window.location.href='course1.html'">Log in</button>
-        <div class="footer">
-            Don't have an account? <a href="register.html" style="color: #2E5CAF;">Sign Up</a></div>
+            <div id="background-image">
+                <img class="logo" src="assets/logo.jpg">
+            </div>
+
+            <div id="subtitle">Welcome to the ScholarSphere</div>
+            <input type="text" class="input-field" style="top: 30%;" placeholder="Enter your email">
+            <input type="password" class="input-field" style="top: 40%;" placeholder="Enter your password">
+            <button class="button" style="top: 50%;" onclick="window.location.href='course1.html'">Log in</button>
+            <div class="footer">
+                Don't have an account? <a href="register.html" style="color: #2E5CAF;">Sign Up</a></div>
         </div>
         <!-- Your existing content here -->
         <!-- ... -->
     </div>
-        <div id="right-card">
-            <img class="sphere" src="https://images.unsplash.com/photo-1557110437-0bcd0a636d62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Image" />
-            <!-- Blank card on the right -->
-            <!-- You can add content here if needed -->
-        </div>
+    <div id="right-card">
+        <img class="sphere" src="assets/purple.jpeg">
+        <!-- Blank card on the right -->
+        <!-- You can add content here if needed -->
+    </div>
 
     </div>
 </body>
+
 </html>
