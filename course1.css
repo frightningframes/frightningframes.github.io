@@ -170,6 +170,7 @@ body {
     width: 90%;
     margin: 4% auto;
     height: 50%;
+    display: flex;
 }
 
 .course-container {
@@ -181,6 +182,11 @@ body {
     margin: 1.4%;
     text-align: center;
     height: 100%;
+}
+
+.calendar{
+    margin-top: 5%;
+    width: 100%;
 }
 
 .heading {
