@@ -14,7 +14,7 @@ body {
 .nav {
     background: #FFF;
     width: 15%;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 25px 25px 0px;
 }
 
 .sign-out-container {
@@ -23,6 +23,11 @@ body {
 
 .logo {
     height: 20%;
+}
+
+.logo-pic{
+    height:80%;
+    padding:10%;
 }
 
 .nav-links {
@@ -86,6 +91,7 @@ body {
     width: 55%;
     position: relative;
     left: 2%;
+    display: flex;
 }
 
 .search-text {
@@ -96,6 +102,14 @@ body {
     font-weight: 300;
     line-height: normal;
     padding: 2.5%;
+    flex-grow: 1;
+}
+
+.search-icon {
+    position: relative;
+    height: 75%;
+    align-self: center;
+    padding: 2%;
 }
 
 .search-faculty {
@@ -105,6 +119,7 @@ body {
     width: 15%;
     position: relative;
     margin: 0 4%;
+    display: flex;
 }
 
 .faculty-text {
@@ -116,6 +131,20 @@ body {
     line-height: normal;
     padding: 6%;
     margin-left: 5%;
+    flex-grow: 1;
+}
+
+.faculty-icon {
+    position: relative;
+    height: 60%;
+    align-self: center;
+    padding: 2%;
+    margin-right: 5%;
+}
+
+.user-container {
+    display: flex;
+    width: 19%;
 }
 
 .user-text {
@@ -126,17 +155,22 @@ body {
     font-weight: 500;
     line-height: normal;
     padding: 2%;
-    margin-left: 2%;
+    width: 70%;
+    align-self: center;
+    text-align: end;
+    padding-right: 7%;
 }
 
-.user-pic{
-widht
+.user-pic {
+    height: 70%;
+    width: 30%;
 }
 
 .bottom-container {
     width: 90%;
     margin: 4% auto;
-    height: auto;
+    height: 50%;
+    display: flex;
 }
 
 .course-container {
@@ -147,6 +181,12 @@ widht
     padding: 0 1%;
     margin: 1.4%;
     text-align: center;
+    height: 100%;
+}
+
+.calendar{
+    margin-top: 5%;
+    width: 100%;
 }
 
 .heading {
