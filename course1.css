@@ -118,6 +118,21 @@ body {
     margin-left: 5%;
 }
 
+.user-text {
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+.user-pic{
+widht
+}
+
 .bottom-container {
     width: 90%;
     margin: 4% auto;
@@ -142,5 +157,5 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding:2%;
+    padding: 2%;
 }
