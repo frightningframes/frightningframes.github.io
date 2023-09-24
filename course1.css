@@ -145,7 +145,7 @@ body {
 .bottom-container {
     width: 90%;
     margin: 4% auto;
-    height: auto;
+    height: 50%;
 }
 
 .course-container {
@@ -156,6 +156,7 @@ body {
     padding: 0 1%;
     margin: 1.4%;
     text-align: center;
+    height: 100%;
 }
 
 .heading {
