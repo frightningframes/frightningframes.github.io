@@ -20,6 +20,15 @@
             padding: 20px;
         }
 
+        #cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            height: 50vh;
+            border: 1px solid black; 
+        }
+
         #container {
             width: 50vw;
             height: 100vh;
@@ -135,6 +144,9 @@
     </style>
 </head>
 <body>
+
+    <div id="cont"></div>
+    
     <div id="left-card">
         <div id="container">
         <div id="background-image"></div>
@@ -144,16 +156,17 @@
         <input type="password" class="input-field" style="top: 40%;" placeholder="Enter your password">
         <button class="button" style="top: 50%;">Log in</button>
         <div class="footer">
-            Don't have an account? <a href="register.html" style="color: #2E5CAF;">Sign Up</a>
+            Don't have an account? <a href="register.html" style="color: #2E5CAF;">Sign Up</a></div>
         </div>
-    </div>
         <!-- Your existing content here -->
         <!-- ... -->
     </div>
-    <div id="right-card">
-        <img src="https://images.unsplash.com/photo-1557110437-0bcd0a636d62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Image" />
-        <!-- Blank card on the right -->
-        <!-- You can add content here if needed -->
+        <div id="right-card">
+            <img src="https://images.unsplash.com/photo-1557110437-0bcd0a636d62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Image" />
+            <!-- Blank card on the right -->
+            <!-- You can add content here if needed -->
+        </div>
+
     </div>
 </body>
 </html>
