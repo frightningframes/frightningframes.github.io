@@ -192,7 +192,7 @@ body {
 
 .calendar{
     margin-top: 5%;
-    width: 100%;
+    width: 80%;
 }
 
 .heading {
@@ -209,7 +209,7 @@ body {
 .articles{
     background-image: url(assets/newspaper.png);
     background-size: cover;
-    padding: 10%;
+    padding: 9%;
     border-radius: 10px;
 }
 
@@ -231,6 +231,7 @@ body {
     background-size: cover;
     padding: 10%;
     border-radius: 10px;
+    margin-top: 3%
 }
 
 .challenge-text {
@@ -241,6 +242,27 @@ body {
     font-weight: 300;
     line-height: normal;
     padding: 6%;
+    /* background-color: #868686; */
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.tech{
+    background-image: url(assets/tech.jpeg);
+    background-size: cover;
+    padding: 10%;
+    border-radius: 10px;
+    margin-top: 8%
+}
+
+.tech-text {
+    color: black;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 5%;
     /* background-color: #868686; */
     opacity: 0.7;
     border-radius: 10px;
