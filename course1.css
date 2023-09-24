@@ -118,6 +118,11 @@ body {
     margin-left: 5%;
 }
 
+.user-container {
+    display: flex;
+    width: 19%;
+}
+
 .user-text {
     color: #000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -126,11 +131,15 @@ body {
     font-weight: 500;
     line-height: normal;
     padding: 2%;
-    margin-left: 2%;
+    width: 70%;
+    align-self: center;
+    text-align: end;
+    padding-right: 7%;
 }
 
-.user-pic{
-widht
+.user-pic {
+    height: 70%;
+    width: 30%;
 }
 
 .bottom-container {
