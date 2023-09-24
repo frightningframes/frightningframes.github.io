@@ -1,0 +1,349 @@
+.website {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.website .div {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.website .overlap-group {
+    position: absolute;
+    width: 65px;
+    height: 20px;
+    top: 89px;
+    left: 11px;
+    border-radius: 5px;
+}
+
+.website .mdi-triangle {
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    top: 7px;
+    left: 48px;
+}
+
+.website .bottom-nav {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 0.2px solid rgba(0, 0, 0, 0.40);
+    background: rgba(46, 92, 175, 0.20);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.website .rectangle {
+    position: absolute;
+    width: 65px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background-color: #2e5caf1a;
+    border-radius: 5px;
+    border: 0.5px solid;
+    border-color: #00000080;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+.website .navbar {
+    position: relative;
+    width: 100%;
+    position: relative;
+    background-color: #2e5caf;
+    border: 0.2px solid;
+    border-color: #00000066;
+}
+
+.website .rectangle-2 {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    left: 0;
+    background-color: #2e5caf;
+    border: 0.2px solid;
+    border-color: #00000066;
+}
+
+.website .login-register-container {
+    text-align: right;
+    padding-right: 2%;
+    position: relative;
+}
+
+.website .login-register {
+    position: relative;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: text-top;
+}
+
+.website .img {
+    position: absolute;
+    width: 100%;
+    height: 58px;
+    top: 30px;
+    left: 0;
+}
+
+.website .line {
+    position: relative;
+    width: 2px;
+    height: 15px;
+    /* left: 616px; */
+    background-color: white;
+    margin-top: 0.8%;
+    display: inline-block;
+}
+
+.website .ellipse {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 4px;
+    left: 8px;
+    background-color: #000000b2;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: #ffffff99;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+.website .vector {
+    left: 21px;
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    top: 21px;
+}
+
+.website .vector-2 {
+    left: 35px;
+    position: absolute;
+    width: 12px;
+    height: 19px;
+    top: 21px;
+}
+
+.website .text-wrapper {
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #2e5caf;
+    font-size: 10px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 1.5%;
+}
+
+.website .text-wrapper-9 {
+    top: 10px;
+    left: 90px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 9px;
+    position: absolute;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.website .ic-outline-email {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 9px;
+    left: 72px;
+}
+
+.website .iconamoon-profile {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 3px;
+    left: 667px;
+}
+
+.website .overlap-container {
+    text-align: center;
+}
+
+.website .overlap {
+    position: relative;
+    width: 25%;
+    height: 210px;
+    background-color: #2e5caf33;
+    border-radius: 10px;
+    border: 0.2px solid;
+    border-color: #00000099;
+    box-shadow: 0px 4px 4px #00000040;
+    display: inline-block;
+    margin: 0 2%;
+}
+
+.website .text-wrapper-10 {
+    position: relative;
+    text-shadow: 0px 4px 4px #00000040;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 18px;
+    line-height: normal;
+    top: 3%;
+}
+
+.website .container {
+    position: relative;
+}
+
+.website .set-clear-study {
+    position: relative;
+    width: 184px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000cc;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.website .rectangle-3 {
+    position: absolute;
+    width: 176px;
+    height: 162px;
+    top: 36px;
+    left: 11px;
+}
+
+.website .overlap-4 {
+    position: absolute;
+    width: 178px;
+    height: 170px;
+    top: 36px;
+    left: 11px;
+}
+
+.website .rectangle-4 {
+    position: absolute;
+    width: 178px;
+    height: 58px;
+    top: 0;
+    left: 0;
+}
+
+.website .rectangle-5 {
+    position: absolute;
+    width: 178px;
+    height: 58px;
+    top: 56px;
+    left: 0;
+}
+
+.website .rectangle-6 {
+    position: absolute;
+    width: 178px;
+    height: 58px;
+    top: 112px;
+    left: 0;
+}
+
+.website .rectangle-7 {
+    position: absolute;
+    width: 145px;
+    height: 16px;
+    top: 6px;
+    left: 9px;
+    background-color: #ffffffb2;
+    border-radius: 5px;
+}
+
+.website .text-wrapper-12 {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.website .rectangle-8 {
+    position: absolute;
+    width: 128px;
+    height: 16px;
+    top: 61px;
+    left: 9px;
+    background-color: #ffffffb2;
+    border-radius: 5px;
+}
+
+.website .text-wrapper-13 {
+    position: absolute;
+    top: 63px;
+    left: 14px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.website .rectangle-9 {
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    top: 120px;
+    left: 9px;
+    background-color: #ffffffb2;
+    border-radius: 5px;
+}
+
+.website .p {
+    position: absolute;
+    top: 122px;
+    left: 14px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.website .text-wrapper-14 {
+    position: relative;
+    /* top: 96px; */
+    padding: 3%;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000b2;
+    font-size: 14px;
+    white-space: nowrap;
+    width: 25%;
+    margin: auto;
+}
+
+.website .clarity-help-line {
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    top: 368px;
+    left: 663px;
+}
