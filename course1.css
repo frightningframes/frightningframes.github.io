@@ -18,15 +18,15 @@ body {
 }
 
 .sign-out-container {
-    height: 25%;
+    height: 5%;
 }
 
-.logo{
-    height:20%;
+.logo {
+    height: 20%;
 }
 
 .nav-links {
-    height: 55%;
+    height: 71%;
 }
 
 .text-wrapper {
@@ -70,22 +70,92 @@ body {
 
 .search {
     width: 90%;
-    margin: 5% auto;
+    margin: 4% auto;
     height: 10%;
     border-radius: 10px;
     background: #FFF;
+    display: flex;
+    /* Make the container a flex container */
+    align-items: center;
+}
+
+.search-bar {
+    border-radius: 4px;
+    background: #EBEBEB;
+    height: 60%;
+    width: 55%;
+    position: relative;
+    left: 2%;
+}
+
+.search-text {
+    color: #656565;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 2.5%;
+}
+
+.search-faculty {
+    border-radius: 4px;
+    background: #EBEBEB;
+    height: 60%;
+    width: 15%;
+    position: relative;
+    margin: 0 4%;
+}
+
+.faculty-text {
+    color: #868686;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 6%;
+    margin-left: 5%;
+}
+
+.user-text {
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+.user-pic{
+widht
 }
 
 .bottom-container {
     width: 90%;
-    margin: 5% auto;
+    margin: 4% auto;
     height: auto;
 }
 
 .course-container {
-    width: 30%;
+    width: 28%;
     border-radius: 10px;
     background: #FFF;
     display: inline-block;
-    padding: 0 1.4%;
+    padding: 0 1%;
+    margin: 1.4%;
+    text-align: center;
+}
+
+.heading {
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 2%;
 }
