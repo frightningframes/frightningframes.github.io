@@ -66,11 +66,11 @@
         }
 
         #subtitle {
-            left: 50px;
-            top: 15%;
+            left: 100px;
+            top: 25%;
             position: absolute;
             color: black;
-            font-size: 3vw;
+            font-size: 2.5vw;
             font-family: Roboto Condensed;
             font-weight: 300;
             word-wrap: break-word;
@@ -78,6 +78,7 @@
 
         /* Input fields and buttons adapt to viewport size */
         .input-field {
+            margin-top: 40px;
             padding-left: 10px;
             width: 40vw;
             height: 5vh;
@@ -90,7 +91,7 @@
         }
 
         .button {
-            margin-top: 40px;
+            margin-top: 80px;
             width: 40vw;
             height: 5vh;
             left: 55px;
@@ -111,11 +112,11 @@
         }
 
         .footer {
-            left: 32%;
-            top: 62%;
+            left: 30%;
+            top: 68%;
             position: absolute;
             color: rgba(0, 0, 0, 0.58);
-            font-size: 1.8vw;
+            font-size: 1.6vw;
             font-family: Roboto;
             font-weight: 400;
             word-wrap: break-word;
@@ -131,13 +132,28 @@
             display: flex;
             width: 50vw;
         }
+
+        .logo{
+            height: 150px;
+            width: 150px;
+            margin-left: 230px;
+            
+        }
+        .sphere {
+            object-fit: fill;
+            display: flex;
+            width: 50vw;
+        }
+
     </style>
 </head>
 <body>
     <div id="left-card">
         <div id="container">
-        <div id="background-image"></div>
-        <div id="title">ScholarSphere</div>
+        <div id="background-image">
+            <img class="logo" src="assets/logo.jpg">
+        </div>
+        
         <div id="subtitle">Welcome to the ScholarSphere</div>
         <input type="text" class="input-field" style="top: 30%;" placeholder="Enter your email">
         <input type="password" class="input-field" style="top: 38%;" placeholder="Enter your password">

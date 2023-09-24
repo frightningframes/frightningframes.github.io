@@ -75,18 +75,22 @@
         }
 
         #subtitle {
-            left: 50px;
-            top: 15%;
+          
+            left: 100px;
+            top: 25%;
+            bottom: 10%;
             position: absolute;
             color: black;
-            font-size: 3vw;
+            font-size: 2.5vw;
             font-family: Roboto Condensed;
             font-weight: 300;
             word-wrap: break-word;
+            font-family: Roboto;
         }
 
         /* Input fields and buttons adapt to viewport size */
         .input-field {
+            margin-top: 40px;
             padding-left: 10px;
             width: 40vw;
             height: 5vh;
@@ -99,10 +103,10 @@
         }
 
         .button {
-            margin-top: 30px;
+            margin-top: 40px;
             width: 40vw;
             height: 5vh;
-            left: 60px;
+            left: 50px;
             position: absolute;
             background: #386CCA;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -120,11 +124,11 @@
         }
 
         .footer {
-            left: 32%;
-            top: 61%;
+            left: 30%;
+            top: 63%;
             position: absolute;
             color: rgba(0, 0, 0, 0.58);
-            font-size: 1.8vw;
+            font-size: 1.6vw;
             font-family: Roboto;
             font-weight: 400;
             word-wrap: break-word;
@@ -136,10 +140,16 @@
         }
 
         
-        img {
+        .sphere {
             object-fit: fill;
             display: flex;
             width: 50vw;
+        }
+
+        .logo{
+            height: 20vh;
+            margin-left: 230px;
+            
         }
     </style>
 </head>
@@ -149,8 +159,10 @@
     
     <div id="left-card">
         <div id="container">
-        <div id="background-image"></div>
-        <div id="title">ScholarSphere</div>
+        <div id="background-image">
+            <img class="logo" src="assets/logo.jpg">
+        </div>
+        
         <div id="subtitle">Welcome to the ScholarSphere</div>
         <input type="text" class="input-field" style="top: 30%;" placeholder="Enter your email">
         <input type="password" class="input-field" style="top: 40%;" placeholder="Enter your password">
@@ -162,7 +174,7 @@
         <!-- ... -->
     </div>
         <div id="right-card">
-            <img src="https://images.unsplash.com/photo-1557110437-0bcd0a636d62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Image" />
+            <img class="sphere" src="https://images.unsplash.com/photo-1557110437-0bcd0a636d62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Image" />
             <!-- Blank card on the right -->
             <!-- You can add content here if needed -->
         </div>

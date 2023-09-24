@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Home Page</title>
+    <title>Home Page</title>
     
     <style>
         body {
@@ -12,9 +12,11 @@
             color: #333;
         }
         header {
-            background-color: #007BFF;
+            display: flex;
+            background-color: lightgrey;
             color: #fff;
             /* padding: 5px; */
+            align-items: center;
             text-align: center;
             position: fixed; /* Fixed position for the header */
             top: 0; /* Position at the top */
@@ -32,12 +34,7 @@
             width: 100%;
         }
 
-        main {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 80px; /* Add margin-top to prevent content from being hidden under the header */
-        }
+       
         a {
             color: #007BFF;
             text-decoration: none;
@@ -68,22 +65,68 @@
             height: 50vh;
         }
 
+    .search {
+        width: 90%;
+        margin: 4% auto;
+        height: 10%;
+        border-radius: 10px;
+        background: #FFF;
+        display: flex;
+        /* Make the container a flex container */
+        align-items: center;
+    }
+
+    .title {
+        text-align: center;
+        margin-left: 40vw;
+        font-size: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .go{
+        background-color: #0056b3;
+        border-radius: 7px;
+        height: 30px;
+        width: 80px;
+        border: none;
+        color:white;
+        cursor: pointer;
+        margin-left: 30vw;
+        padding-top: 1.2vh;
+    }
+
+    .container {
+        margin-top: 130px;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 80vh;
+        background-color: lightgrey;
+       border-radius: 15px;
+    }
+
+    .takeToHome {
+        color: white;
+        padding-top: 50px;
+       
+    }
+
+
     </style>
 
 </head>
 <body>
     <header>
-        <h1>Welcome to My Basic Home Page</h1>
+        <div class="title"> ScholarSphere</div>
+        <a href="login.html" class="go">Login</a>
     </header>
+
+    <div class="container">
         
-        <main>
-            <h2>This is the Subheader</h2>
-        <card>helo</card>
-        <h2>About This Page</h2>
-        <p>This is a basic HTML home page with a heading, subheading, and some other elements. Feel free to customize it to your liking!</p>
-        <p>Check out <a href="https://www.example.com">this link</a> for more information.</p>
-        <a href="help.html" class="help-button">View Help</a>
-        <a href="course1.html" class="help-button">Course1</a>
-    </main>
+        <a class="takeToHome" href="course1.html">Explore some courses</a>
+    </div>
+    
 </body>
 </html>
