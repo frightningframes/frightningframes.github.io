@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: white;
             color: #333;
         }
         header {
@@ -109,10 +109,20 @@
 
     .takeToHome {
         color: white;
-        padding-top: 50px;
-       
+        font-size:18px;
     }
 
+    .arrow-icon::after {
+            content: ' →'; /* Right-pointing arrow using an HTML entity */
+            font-size: 18px;
+        }
+
+    .logo {
+        margin-top: 50px;
+        height: 300px;
+        width: 300px;
+        margin-left: 40vw;
+    }
 
     </style>
 
@@ -122,10 +132,13 @@
         <div class="title"> ScholarSphere</div>
         <a href="login.html" class="go">Login</a>
     </header>
+    <div id="background-image">
+        <img class="logo" src="assets/logo.jpg">
+    </div>
 
     <div class="container">
         
-        <a class="takeToHome" href="course1.html">Explore some courses</a>
+        <a class="takeToHome" href="course1.html">Explore some courses <span class="arrow-icon"></span></a>
     </div>
     
 </body>
