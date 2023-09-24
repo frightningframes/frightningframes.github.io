@@ -26,8 +26,9 @@ body {
 }
 
 .logo-pic{
-    height:80%;
-    padding:10%;
+    height:85%;
+    padding-left:25%;
+    padding-top:5%;
 }
 
 .nav-links {
