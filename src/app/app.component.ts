@@ -8,10 +8,4 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'StudyPortal';
-
-  constructor(private router: Router) { }
-
-  redirectToLogin() {
-    this.router.navigate(['/login']);
-  }
 }
