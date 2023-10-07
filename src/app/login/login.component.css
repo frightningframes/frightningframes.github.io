@@ -1,3 +1,17 @@
+body {
+  background-color: #C5D3FE;
+}
+
+.bodyy {
+  background-color: #C5D3FE;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
 .floating-card {
     display: flex;
     width: 70vw;
@@ -17,7 +31,6 @@
     flex: 1;
     text-align: center;
     padding: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Push elements apart */
@@ -32,6 +45,7 @@
   }
   
   form {
+    padding-top: 0;
     display: flex;
     flex-direction: column;
   }
@@ -44,6 +58,7 @@
   input[type="text"],
   input[type="password"] {
     padding: 10px;
+    margin-top: 0;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 15px;
