@@ -8,6 +8,12 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { CoursesComponent } from './courses/courses.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BITComponent } from './bit/bit.component';
+import { CompSciComponent } from './comp-sci/comp-sci.component';
+import { BScITComponent } from './bsc-it/bsc-it.component';
+import { CompEngComponent } from './comp-eng/comp-eng.component';
+import { InformaticsComponent } from './informatics/informatics.component';
+import { MultimediaComponent } from './multimedia/multimedia.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     RegisterComponent,
     HomeComponent,
     CoursesComponent,
-    NavbarComponent
+    NavbarComponent,
+    BITComponent,
+    CompSciComponent,
+    BScITComponent,
+    CompEngComponent,
+    InformaticsComponent,
+    MultimediaComponent
   ],
   imports: [
     BrowserModule,
