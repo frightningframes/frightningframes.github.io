@@ -17,7 +17,16 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
+   
+    
     z-index: 1; /* Ensure the text is above the slideshow */
+  }
+
+  h2 {
+    margin-top: -5px;
+    font-size: 50px;
+    margin-bottom: 250px;
   }
   
   /* Styles for the slideshow container and slides */
@@ -52,4 +61,20 @@
     100% { opacity: 0; }
   }
   
-  
+  .logo {
+    width: 10vw;
+    height: 20vh;
+    
+  }
+/*   
+  a.guest::after {
+    content: "→";
+    color: white;
+    font-size: 25px;
+  } */
+
+  .guest {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+  }
