@@ -1,0 +1,110 @@
+header {
+    background-color: #C5D3FE;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+   padding-bottom: 30px;
+  }
+
+  /* Center-align the title */
+.centered-title {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 38vw;
+    display:flex;
+    align-items: center;
+    flex-grow: 1; /* Expand and center the title within the available space */
+  }
+
+  .logo {
+    width: 55px; /* Adjust the width as needed */
+    height: 55px; /* Adjust the height as needed */
+    margin-right: 10px
+  }
+  
+  /* Style for the title itself */
+  .centered-title h1 {
+    margin: 0; /* Remove default margin */
+  }
+  
+  
+  .right-links {
+    display: flex;
+  }
+  
+  .right-links a {
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+  }
+
+  .page-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center-align the page navigation buttons */
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-nav li {
+    margin-right: 10px;
+    
+  }
+  
+  .page-nav a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .page-nav a.active {
+    background-color: #556FFF; /* Change to black */
+    color: white; /* Change text color to white */
+    border-radius: 5px;
+  }
+
+  nav {
+    margin-bottom: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding-bottom: 10px;
+    background-color: #C5D3FE;
+  }
+  .one {
+    margin-left: 50px
+  }
+  nav li {
+    margin-right: 60px;
+    text-align: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .pagebut {
+    width: 15vw;
+    /* padding-left: 25px;
+    padding-right: 25px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+  }
