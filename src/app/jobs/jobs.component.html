@@ -1,0 +1,80 @@
+<app-navbar></app-navbar>
+
+<!-- job.component.html -->
+
+<div class="jobs-container">
+    <h1>Job Listings</h1>
+
+    <!-- Job 1 -->
+    <div class="job">
+        <h2>Software Engineer</h2>
+        <p><strong>Company:</strong> Tech Corp</p>
+        <p><strong>Location:</strong> New York</p>
+        <p><strong>Salary:</strong> $80,000 - $100,000</p>
+        <p><strong>Description:</strong> Develop and maintain web applications.</p>
+        <a href="#">Apply Now</a>
+    </div>
+
+    <!-- Job 2 -->
+    <div class="job">
+        <h2>Data Scientist</h2>
+        <p><strong>Company:</strong> Data Inc.</p>
+        <p><strong>Location:</strong> San Francisco</p>
+        <p><strong>Salary:</strong> $90,000 - $110,000</p>
+        <p><strong>Description:</strong> Analyze large datasets and provide insights.</p>
+        <a href="#">Apply Now</a>
+    </div>
+
+    <!-- Add more job listings as needed -->
+
+</div>
+
+<!-- Styles (if not already present) -->
+<style>
+.jobs-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: #333; /* Dark text color for better contrast on white background */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job {
+    background-color: #C5D3FE;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.job:last-child {
+    margin-bottom: 0;
+}
+
+.job h2 {
+    color: black;
+    margin-top: 0;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #556FFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #334AB7;
+}
+
+</style>

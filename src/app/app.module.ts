@@ -14,6 +14,7 @@ import { BScITComponent } from './bsc-it/bsc-it.component';
 import { CompEngComponent } from './comp-eng/comp-eng.component';
 import { InformaticsComponent } from './informatics/informatics.component';
 import { MultimediaComponent } from './multimedia/multimedia.component';
+import { JobsComponent } from './jobs/jobs.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MultimediaComponent } from './multimedia/multimedia.component';
     BScITComponent,
     CompEngComponent,
     InformaticsComponent,
-    MultimediaComponent
+    MultimediaComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
