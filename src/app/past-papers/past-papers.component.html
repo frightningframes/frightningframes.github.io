@@ -41,14 +41,12 @@
     
 </div>
 
-<div class="papers-container">
-
+<<div class="papers-container">
     <div class="paper" *ngFor="let paper of filteredPapers">
-       
         <h2>{{ paper.Year }} - {{ paper.Module }} - {{ paper.Assessment }}</h2>
-       
     </div>
-  
+    <div *ngIf="filteredPapers.length === 0" class="nomore">No papers found!</div>
 </div>
+
 
 
