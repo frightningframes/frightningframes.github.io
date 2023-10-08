@@ -1,0 +1,77 @@
+.tutors-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tutor {
+    background-color: #C5D3FE;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tutor:last-child {
+    margin-bottom: 0;
+}
+
+.tutor h2 {
+    color: black;
+    margin-top: 0;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #556FFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #334AB7;
+}
+
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #C5D3FE;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filters label, .filters select {
+    margin-right: 10px;
+}
+
+.filter-button {
+    padding: 8px 15px;
+    background-color: #556FFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #334AB7;
+}

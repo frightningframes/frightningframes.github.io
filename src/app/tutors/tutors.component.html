@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<div class="tutors-container">
+
+    <h1>Find a Tutor</h1>
+
+    <!-- Filter Section -->
+    <div class="filters">
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" [(ngModel)]="selectedSubject">
+            <option value="all">All</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="English">English</option>
+            <!-- ... add more subjects as needed -->
+        </select>
+
+        <label for="location">Location:</label>
+        <select id="location" name="location" [(ngModel)]="selectedLocation">
+            <option value="all">All</option>
+            <option value="New York">New York</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Chicago">Chicago</option>
+            <!-- ... add more locations as needed -->
+        </select>
+
+        <label for="rate">Hourly Rate:</label>
+        <select id="rate" name="rate" [(ngModel)]="selectedRate">
+            <option value="all">All</option>
+            <option value="below-30">Below $30/hr</option>
+            <option value="30-40">$30-$40/hr</option>
+            <option value="above-40">Above $40/hr</option>
+        </select>
+
+        <button class="filter-button" (click)="applyFilters()">Apply Filters</button>
+        <button class="filter-button" (click)="clearFilters()">Clear Filters</button>
+    </div>
+
+    <div *ngFor="let tutor of displayedTutors" class="tutor">
+        <h2>{{ tutor.subject }} Tutor</h2>
+        <p><strong>Name:</strong> {{ tutor.name }}</p>
+        <p><strong>Location:</strong> {{ tutor.location }}</p>
+        <p><strong>Rate:</strong> ${{ tutor.rate }}/hr</p>
+        <p><strong>Specialization:</strong> {{ tutor.specialization }}</p>
+        <a href="#">Contact Tutor</a>
+    </div>
+
+</div>
