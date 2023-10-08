@@ -1,3 +1,9 @@
 a{
     display:list-item;
 }
+
+button {
+    padding:15px;
+    border-radius: 15px;
+    align-items: center;
+}

@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   redirectToNewPage() {
-    this.router.navigate(['/BIT']); // Navigate to the 'new-page' route
+    this.router.navigate(['/home']); // Navigate to the 'new-page' route
     const link=document.querySelector('.link') as HTMLElement;
     link.style.display="none";
   }
