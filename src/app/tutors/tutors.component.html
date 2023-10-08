@@ -25,15 +25,22 @@
                 <option value="4+">4+</option>
             </select>
         </div>
+        
     </div>
 
    
-        <div *ngFor="let tutor of filteredGroups" class="tutor">
+    <div *ngFor="let tutor of filteredGroups" class="tutor">
+        <div class="tutor-info">
             <h2>{{ tutor.Module }} Tutor</h2>
             <p><strong>Name:</strong> {{ tutor.name }}</p>
             <p><strong>Rate:</strong> R{{ tutor.rate }}/hr</p>
-            <p><strong>Expereince:</strong> {{ tutor.experience }} years</p>
+            <p><strong>Experience:</strong> {{ tutor.experience }} years</p>
+            <p><strong>Description:</strong> {{ tutor.description }}</p>
             <a href="#">Contact Tutor</a>
         </div>
-        <div class="nomore" *ngIf="filteredGroups.length === 0" class="nomore">No tutors found!</div>
 
+        <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image">
+    </div>
+    
+      
+        <div class="nomore" *ngIf="filteredGroups.length === 0" class="nomore">No tutors found!</div>
