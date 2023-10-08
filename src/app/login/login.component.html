@@ -18,12 +18,17 @@
         <h2>ScholarSphere</h2>
 
         <!-- <label for="username">Username:</label> -->
-        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <input type="text" [(ngModel)]="username" name="username" placeholder="Enter your username">
 
         <!-- <label for="password">Password:</label> -->
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-
-        <button routerLink="/BIT">Login</button>
+        <input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password">
+        
+        <div *ngIf="registrationError" style="color: red;">{{ registrationError }}</div>
+        
+        <!-- Display a success message if registration is successful -->
+        <div *ngIf="registrationSuccess" style="color: green;">Registration successful!</div>
+        
+        <button  (click)="registerUser()" routerLink="/BIT">Login</button>
 
 
       </div>

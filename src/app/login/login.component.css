@@ -98,3 +98,16 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 img {
   height: 100%;
 }
+
+#emailError {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Update input styles to highlight invalid email */
+#email:invalid {
+  border-color: red;
+}
