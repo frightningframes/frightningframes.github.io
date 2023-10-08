@@ -25,7 +25,7 @@ const routes: Routes = [
 { path: 'BScIT', component: BScITComponent },
 { path: 'Multimedia', component: MultimediaComponent },
 { path: 'Informatics', component: InformaticsComponent },
-{path: 'Jobs', component: JobsComponent}
+{path: 'jobs', component: JobsComponent}
 ];
 
 @NgModule({
