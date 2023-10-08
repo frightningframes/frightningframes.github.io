@@ -8,4 +8,12 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'StudyPortal';
+
+  constructor(private router: Router) { }
+
+  redirectToNewPage() {
+    this.router.navigate(['/BIT']); // Navigate to the 'new-page' route
+    const link=document.querySelector('.link') as HTMLElement;
+    link.style.display="none";
+  }
 }

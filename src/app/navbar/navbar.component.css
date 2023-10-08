@@ -11,12 +11,11 @@ header {
 
 /* Center-align the title */
 .centered-title {
-  color: black;
+  /* color: black; */
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 38vw;
   display: flex;
-  align-items: center;
   flex-grow: 1;
   /* Expand and center the title within the available space */
 }
@@ -29,12 +28,32 @@ header {
   margin-right: 10px
 }
 
-/* Style for the title itself */
 .centered-title h1 {
   margin: 0;
-  /* Remove default margin */
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
 }
 
+.centered-title h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #556FFF;
+}
+
+.centered-title h1:nth-child(2) {
+  color:#556FFF;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate{
+  0%, 100%
+  {
+    clip-path: polygon(0% 48%, 14% 45%, 26% 46%, 37% 52%, 45% 56%, 56% 62%, 68% 70%, 80% 71%, 93% 69%, 100% 61%, 100% 100%, 0 100%);
+  }
+  50%
+  {
+    clip-path: polygon(0% 48%, 7% 56%, 19% 62%, 30% 62%, 43% 57%, 53% 52%, 64% 48%, 80% 46%, 91% 46%, 100% 51%, 100% 100%, 0 100%);
+  }
+}
 
 .right-links {
   display: flex;
