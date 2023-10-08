@@ -1,1 +1,39 @@
-<p>register works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>Your Page Title</title> -->
+</head>
+<app-navbar></app-navbar>
+<body style="margin:0;" >
+  <div class="bodyy">
+    <div class="floating-card">
+      <!-- <button class="close-button" (click)="closeCard()">X</button> -->
+      <div class="left-side">
+        <h2>ScholarSphere</h2>
+
+        <!-- <label for="username">Username:</label> -->
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+
+        <!-- <label for="password">Password:</label> -->
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+
+        <input type="password" id="password" name="password" placeholder="Confirm your password">
+
+        <button routerLink="/course">Register</button>
+
+
+      </div>
+      <div class="right-side">
+        <img src="assets/purple.jpeg" alt="Image">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,11 +1,17 @@
 body {
   background: #C5D3FE;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
 }
 
 .bodyy {
   background-color: #C5D3FE;
+  overflow: hidden;
 }
 
 h2 {
