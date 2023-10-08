@@ -17,6 +17,7 @@ import { JobsComponent } from './jobs/jobs.component';
 import { PastPapersComponent } from './past-papers/past-papers.component';
 import { TutorsComponent } from './tutors/tutors.component';
 import { FormsModule } from '@angular/forms';
+import { StudyGroupsComponent } from './study-groups/study-groups.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     MultimediaComponent,
     JobsComponent,
     PastPapersComponent,
-    TutorsComponent
+    TutorsComponent,
+    StudyGroupsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,84 @@
+.papers-container {
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    color: #333; /* Dark text color for better contrast on white background */
+    /* text-align: center; */
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding-top: 0;
+    font-size: 42px;
+}
+
+.paper {
+    background-color: #C5D3FE;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.paper:last-child {
+    margin-bottom: 0;
+}
+
+.paper h2 {
+    color: black;
+    /* margin-top: 50px; */
+}
+
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #556FFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #334AB7;
+}
+
+.filters {
+    display: flex;
+    margin-top: 0px;
+    /* margin-right: 5px; */
+}
+
+.filter1 {
+   margin-left: 10vw;
+}
+.filter2 {
+    margin-left: 10vw;
+ }
+ .filter3 {
+    margin-left: 2vw;
+ }
+
+
+#filter-module {
+    font-size: 18px;
+    background-color: white; /* Change the background color to dark grey */
+    color: grey; /* Change the text color to white */
+    border-radius: 10px; /* Adjust the border radius as needed */
+    border: 2px solid grey; /* Remove the default border */
+    padding: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.nomore {
+    font-size: 20px;
+}

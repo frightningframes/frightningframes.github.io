@@ -14,6 +14,7 @@ import { InformaticsComponent } from './informatics/informatics.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { PastPapersComponent } from './past-papers/past-papers.component';
 import { TutorsComponent } from './tutors/tutors.component';
+import { StudyGroupsComponent } from './study-groups/study-groups.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
 {path: 'jobs', component: JobsComponent},
 {path: 'pastpapers', component: PastPapersComponent},
 {path: 'tutors', component: TutorsComponent},
+{path: 'studygroups', component: StudyGroupsComponent},
 ];
 
 @NgModule({
