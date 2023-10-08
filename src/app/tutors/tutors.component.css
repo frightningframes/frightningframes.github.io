@@ -75,12 +75,12 @@ a:hover {
 
 .filters {
     display: flex;
-    margin-top: 0px;
+    padding-top: 20px;
     /* margin-right: 5px; */
 }
 
 .filter1 {
-   margin-left: 5px;
+   margin-left: 0px;
 }
 .filter2 {
     margin-left: 10px;
@@ -113,4 +113,5 @@ h2 {
 
 .nomore {
     font-size: 20px;
+    padding-top: 35px;
 }

@@ -9,26 +9,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <title>Your Page Title</title> -->
 </head>
-<app-navbar></app-navbar>
+
 <body style="margin:0;" >
   <div class="bodyy">
     <div class="floating-card">
       <!-- <button class="close-button" (click)="closeCard()">X</button> -->
       <div class="left-side">
         <h2>ScholarSphere</h2>
-
-        <!-- <label for="username">Username:</label> -->
-        <input type="text" id="username" name="username" placeholder="Enter your username">
-
-        <!-- <label for="password">Password:</label> -->
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-
-        <input type="password" id="password" name="password" placeholder="Confirm your password">
-
-        <button routerLink="/course">Register</button>
-
-
-      </div>
+    
+        <!-- Username input -->
+        <input type="text" [(ngModel)]="username" name="username" placeholder="Enter your username">
+        
+        <!-- Password input -->
+        <input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password">
+        
+        <!-- Confirm password input -->
+        <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+        
+        <!-- Display error messages for empty fields and password mismatch -->
+        <div *ngIf="registrationError" style="color: red;">{{ registrationError }}</div>
+        
+        <!-- Display a success message if registration is successful -->
+        <div *ngIf="registrationSuccess" style="color: green;">Registration successful!</div>
+    
+        <button (click)="registerUser()" routerLink="/BIT">Register</button>
+    </div>
+    
+    
       <div class="right-side">
         <img src="assets/purple.jpeg" alt="Image">
       </div>

@@ -38,8 +38,9 @@
             <p><strong>Description:</strong> {{ tutor.description }}</p>
             <a href="#">Contact Tutor</a>
         </div>
+
         <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image">
     </div>
     
       
-
+        <div class="nomore" *ngIf="filteredGroups.length === 0" class="nomore">No tutors found!</div>

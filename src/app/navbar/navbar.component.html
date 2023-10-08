@@ -20,12 +20,43 @@
   <!-- Page navigation buttons -->
   <nav>
      <ul class="page-nav">
-        <li><button class="pagebut" routerLink="/BIT" routerLinkActive="active">BIT</button></li>
-        <li><button class="pagebut" routerLink="/CompSci"  routerLinkActive="active">Computer Science</button></li>
-        <li><button class="pagebut" routerLink="/BScIT"  routerLinkActive="active">BSc IT</button></li>
-        <li><button class="pagebut" routerLink="/CompEng"  routerLinkActive="active">Computer Engineering</button></li>
-        <li><button class="pagebut" routerLink="/Informatics"  routerLinkActive="active">Informatics</button></li>
-        <li><button class="pagebut" routerLink="/Multimedia"  routerLinkActive="active">Multimedia</button></li>
+        <li><button class="pagebut" routerLink="/BIT" [ngClass]="{'active-button': isBit}" routerLinkActive="active">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          BIT
+        </button></li>
+        <li><button class="pagebut" routerLink="/CompSci" [ngClass]="{'active-button': isCompSci}" routerLinkActive="active">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Computer Science</button></li>
+        <li><button class="pagebut" routerLink="/BScIT" [ngClass]="{'active-button': isBscIt}" routerLinkActive="active">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          BSc IT</button></li>
+        <li><button class="pagebut" routerLink="/CompEng" [ngClass]="{'active-button': isCompEng}" routerLinkActive="active">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Computer Engineering</button></li>
+        <li><button class="pagebut" routerLink="/Informatics" [ngClass]="{'active-button': isInformatics}" routerLinkActive="active">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Informatics</button></li>
+        <li><button class="pagebut" routerLink="/Multimedia" [ngClass]="{'active-button': isMultimedia}" routerLinkActive="active">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Multimedia</button></li>
       </ul>
   </nav>
   
