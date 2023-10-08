@@ -6,6 +6,13 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.tutor-image {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+
+
 h1 {
     color: #333; /* Dark text color for better contrast on white background */
     /* text-align: center; */
@@ -16,6 +23,9 @@ h1 {
 }
 
 .tutor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-top: 30px;
     background-color: #C5D3FE;
     border-radius: 10px;
@@ -27,6 +37,14 @@ h1 {
 
 .tutor:last-child {
     margin-bottom: 0;
+    flex-basis: 75%;
+}
+
+.tutor-image {
+    flex-basis: 20%;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5%;
 }
 
 .tutor h2 {
