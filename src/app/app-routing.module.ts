@@ -12,6 +12,7 @@ import { BScITComponent } from './bsc-it/bsc-it.component';
 import { MultimediaComponent } from './multimedia/multimedia.component';
 import { InformaticsComponent } from './informatics/informatics.component';
 import { JobsComponent } from './jobs/jobs.component';
+import { PastPapersComponent } from './past-papers/past-papers.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
 { path: 'BScIT', component: BScITComponent },
 { path: 'Multimedia', component: MultimediaComponent },
 { path: 'Informatics', component: InformaticsComponent },
-{path: 'jobs', component: JobsComponent}
+{path: 'jobs', component: JobsComponent},
+{path: 'pastpapers', component: PastPapersComponent}
 ];
 
 @NgModule({
