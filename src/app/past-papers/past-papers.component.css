@@ -16,6 +16,7 @@ h1 {
 }
 
 .paper {
+   
     background-color: #C5D3FE;
     border-radius: 10px;
     padding: 15px;
@@ -29,6 +30,7 @@ h1 {
 
 .paper h2 {
     color: black;
+    font-size: 18px;
     /* margin-top: 50px; */
 }
 
@@ -64,7 +66,7 @@ a:hover {
     margin-left: 2vw;
  }
 #filter-year {
-    font-size: 20px;
+    font-size: 18px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
@@ -74,7 +76,7 @@ a:hover {
 }
 
 #filter-module {
-    font-size: 20px;
+    font-size: 18px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */

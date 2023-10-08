@@ -38,7 +38,7 @@ export class PastPapersComponent {
   paper = {}
   filterPapers(year: string, module_: string, assessment: string): void {
   // console.log('Year:', year);
-  console.log('Module:', module_);
+  // console.log('Module:', module_);
   // console.log('Assessment:', assessment);
     this.paper = this.filteredPapers[0]
     this.filteredPapers = this.pastPapers.filter(paper =>
@@ -46,6 +46,6 @@ export class PastPapersComponent {
       (module_ === '' || paper.Module === module_) &&
       (assessment === '' || paper.Assessment === assessment)
     );
-  console.log(this.filteredPapers)
+  // console.log(this.filteredPapers)
   }
 }

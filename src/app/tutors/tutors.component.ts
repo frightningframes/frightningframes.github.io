@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
 
+interface Tutors {
+  Module: string;
+  name:string;
+  rate: string;
+  experience: string;
+}
+
 @Component({
   selector: 'app-tutors',
   templateUrl: './tutors.component.html',
@@ -7,37 +14,34 @@ import { Component } from '@angular/core';
 })
 export class TutorsComponent {
 
-  // Sample data model for tutors
-  allTutors = [
-    { name: 'Alice Thompson', subject: 'Mathematics', location: 'New York', rate: 40, specialization: 'Algebra, Calculus' },
-    { name: 'Bob Carter', subject: 'Physics', location: 'Los Angeles', rate: 45, specialization: 'Classical Mechanics, Quantum Physics' },
-    // ... (add all the tutors here)
-  ];
 
-  displayedTutors = [...this.allTutors];  // Tutors to be displayed after applying filters
+  study: Tutors[] = [
+    { Module:'COS333', name: 'Eva Martin',  rate: '50', experience:'3' },
+    { Module:'COS330', name: 'David Lee', rate: '55', experience:'2' },
+    { Module:'COS301', name: 'Eva Martin',  rate: '50', experience:'3' },
+    { Module:'COS341', name: 'David Lee', rate: '55', experience:'1' },
+    { Module:'IMY310', name: 'Eva Martin',  rate: '50', experience:'3' },
+    { Module:'IMY320', name: 'David Lee', rate: '55', experience:'4+' },
+    { Module:'COS333', name: 'Sophia Rodriguez',  rate: '45', experience:'2' },
+    { Module:'COS330', name: 'Michael Smith', rate: '60', experience:'3' },
+    { Module:'COS301', name: 'Sophia Rodriguez',  rate: '45', experience:'1' },
+    { Module:'COS341', name: 'Michael Smith', rate: '60', experience:'2' },
+    { Module:'IMY310', name: 'Sophia Rodriguez',  rate: '45', experience:'2' },
+    { Module:'IMY320', name: 'Michael Smith', rate: '60', experience:'4+' },
+    // Add more tutors here
+];
 
-  // Filter properties bound to the dropdowns in the HTML
-  selectedSubject: string = 'all';
-  selectedLocation: string = 'all';
-  selectedRate: string = 'all';
 
-  // Method to apply filters based on selected values
-  applyFilters(): void {
-    this.displayedTutors = this.allTutors.filter(tutor => {
-      return (this.selectedSubject === 'all' || tutor.subject === this.selectedSubject) &&
-             (this.selectedLocation === 'all' || tutor.location === this.selectedLocation) &&
-             (this.selectedRate === 'all' || 
-              (this.selectedRate === 'below-30' && tutor.rate < 30) ||
-              (this.selectedRate === '30-40' && tutor.rate >= 30 && tutor.rate <= 40) ||
-              (this.selectedRate === 'above-40' && tutor.rate > 40));
-    });
+  filteredGroups: Tutors[] = []; // Initialize an array for filtered papers
+  group = {}
+  filterGroups(module_: string, experience: string): void {
+   console.log('Module:', module_);
+
+  // console.log('Assessment:', assessment);
+    this.group = this.filteredGroups[0]
+    this.filteredGroups = this.study.filter(group =>
+      (module_ === '' || group.Module === module_) &&
+      (experience === '' || group.experience === experience) 
+    );
   }
-
-  clearFilters(): void {
-    this.selectedSubject = 'all';
-    this.selectedLocation = 'all';
-    this.selectedRate = 'all';
-    this.displayedTutors = [...this.allTutors];  // Reset the displayed tutors to show all
-}
-
 }
