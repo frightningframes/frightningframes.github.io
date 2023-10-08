@@ -1,8 +1,13 @@
 <app-navbar></app-navbar>
 
+<div class="papers-container">
+    <h1>Searching for Past Papers</h1>
+
+</div>
+
 <div class="filters">
-    <div class="filter">
-        <select id="filter-year">
+    <div class="filter1">
+        <select id="filter-year" #filterYear (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
             <option value="" disabled selected style="display:none;">Year</option>
             <option value="2023">2023</option>
             <option value="2022">2022</option>
@@ -12,35 +17,38 @@
             <option value="2018">2018</option>
         </select>
     </div>
-    <div class="filter">
-        <select id="filter-module">
+    <div class="filter2">
+        <select id="filter-module" #filterModule (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
             <option value="" disabled selected style="display:none;">Modules</option>
-            <option value="module1">COS333</option>
-            <option value="module2">COS330</option>
-            <option value="module3">COS341</option>
-            <option value="module4">COS301</option>
-            <option value="module5">IMY310</option>
-            <option value="module6">IMY320</option>
+            <option value="COS333">COS333</option>
+            <option value="COS330">COS330</option>
+            <option value="COS341">COS341</option>
+            <option value="COS301">COS301</option>
+            <option value="IMY310">IMY310</option>
+            <option value="IMY320">IMY320</option>
         </select>
     </div>
-    <div class="filter">
-        <select id="filter-asessment">
-            <option value="" disabled selected style="display:none;">Assesment</option>
-            <option value="Ass1">Tutorials</option>
-            <option value="Ass2">Class tests</option>
-            <option value="Ass3">Semester test 1</option>
-            <option value="Ass4">Semester test 2</option>
-            <option value="Ass5">Exam</option>
+    <div class="filter3">
+        <select id="filter-assessment" #filterAssessment (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
+            <option value="" disabled selected style="display:none;">Assessment</option>
+            <option value="Tutorials">Tutorials</option>
+            <option value="Class tests">Class tests</option>
+            <option value="Semester test 1">Semester test 1</option>
+            <option value="Semester test 2">Semester test 2</option>
+            <option value="Exam">Exam</option>
         </select>
     </div>
+    
 </div>
 
 <div class="papers-container">
-    <h1>Searching for Past Papers</h1>
 
-    <div class="paper">
+    <div class="paper" *ngFor="let paper of filteredPapers">
+       
+        <h2>{{ paper.Year }} - {{ paper.Module }} - {{ paper.Assessment }}</h2>
+       
     </div>
-
-    <div class="paper">
-    </div>
+  
 </div>
+
+
