@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -16,6 +15,9 @@ import { InformaticsComponent } from './informatics/informatics.component';
 import { MultimediaComponent } from './multimedia/multimedia.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { PastPapersComponent } from './past-papers/past-papers.component';
+import { TutorsComponent } from './tutors/tutors.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { PastPapersComponent } from './past-papers/past-papers.component';
     InformaticsComponent,
     MultimediaComponent,
     JobsComponent,
-    PastPapersComponent
+    PastPapersComponent,
+    TutorsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
