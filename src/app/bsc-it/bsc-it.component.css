@@ -1,0 +1,99 @@
+.section-container {
+    height: 77vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5%;
+    text-decoration: none;
+    position: fixed;
+}
+
+.section {
+    text-decoration: none;
+    position: relative;
+    width: 22vw;
+    height: 80%;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2.5px solid #556FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 0% 1%;
+    cursor: pointer; /* Add this to indicate the section is clickable */
+    transition: background-color 0.3s, transform 0.3s; /* Add transitions for smooth hover effect */
+}
+
+/* Add hover styles to change background color and scale the section slightly */
+.section:hover {
+    background-color: #556FFF;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.section:hover::before {
+    opacity: 1; /* Make the overlay visible on hover */
+}
+
+.section-heading {
+    color: white;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    border-radius: 15px;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s;
+}
+
+#sec1{
+    background: rgba(0, 0, 0, 0.5);
+    background: url(../../assets/job-search.jpeg);
+    background-size: cover;
+    background-position-x: center;
+    text-decoration: none;
+}
+
+#sec2{
+    background: rgba(0, 0, 0, 0.5);
+    background: url(../../assets/Tutor.jpeg);
+    background-size: cover;
+    background-position-x: right;
+}
+
+#sec3{
+    background: rgba(0, 0, 0, 0.5);
+    background: url(../../assets/study-group.png);
+    background-size: cover;
+}
+
+#sec4{
+    background: rgba(0, 0, 0, 0.5);
+    background: url(../../assets/past-papers.jpeg);
+    background-size: cover;
+}
+
+.section-heading {
+    color: #EBEBEB;
+    font-family: Inter;
+    font-size: 23px;
+    font-weight: 900;
+    width: 80%;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    margin-bottom: 15%;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+.arrow{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5%;
+}
