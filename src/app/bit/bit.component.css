@@ -16,29 +16,36 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     padding: 0% 1%;
+    transition: transform 300ms ease;
+    opacity: 1;
 }
 
-#sec1{
+.section:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+#sec1 {
     background: rgba(0, 0, 0, 0.5);
     background: url(../../assets/job-search.jpeg);
     background-size: cover;
     background-position-x: center;
 }
 
-#sec2{
+#sec2 {
     background: rgba(0, 0, 0, 0.5);
     background: url(../../assets/Tutor.jpeg);
     background-size: cover;
     background-position-x: right;
 }
 
-#sec3{
+#sec3 {
     background: rgba(0, 0, 0, 0.5);
     background: url(../../assets/study-group.png);
     background-size: cover;
 }
 
-#sec4{
+#sec4 {
     background: rgba(0, 0, 0, 0.5);
     background: url(../../assets/past-papers.jpeg);
     background-size: cover;
@@ -54,10 +61,38 @@
     position: relative;
     align-items: flex-end;
     margin-bottom: 15%;
-  }
+}
 
-  .arrow{
+.arrow {
     display: flex;
     align-items: flex-end;
     margin-bottom: 5%;
-  }
+}
+
+#trailer {
+    width: 40px;
+    /* Set the width of the trailer */
+    height: 40px;
+    /* Set the height of the trailer */
+    border: 2px solid grey;
+    /* Set the grey outline */
+    border-radius: 50%;
+    /* Make the trailer a circle */
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 5px;
+    /* Set the width of the dot */
+    height: 5px;
+    /* Set the height of the dot */
+    background-color: grey;
+    /* Set the dot's color */
+    border-radius: 50%;
+    /* Make the dot a circle */
+}
