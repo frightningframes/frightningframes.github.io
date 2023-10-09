@@ -1,17 +1,16 @@
-.tutors-container {
-    width: 80%;
-    margin: 20px auto;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    font-family: 'Oswald', sans-serif;
-}
-
 .tutor-image {
     max-width: 150px;
     max-height: 150px;
     border-radius: 50%;
 }
 
+.papers-container {
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+}
 
 h1 {
     color: #333; /* Dark text color for better contrast on white background */
@@ -22,39 +21,21 @@ h1 {
     font-size: 42px;
 }
 
-.tutor {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 30px;
+.paper {
     background-color: #C5D3FE;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
 }
 
-.tutor:last-child {
+.paper:last-child {
     margin-bottom: 0;
-    flex-basis: 75%;
 }
 
-.tutor-image {
-    flex-basis: 20%;
-    max-width: 250px;
-    max-height: 250px;
-    border-radius: 5%;
-}
-
-.tutor h2 {
+.paper h2 {
     color: black;
-    font-size: 18px;
     /* margin-top: 50px; */
-}
-
-p {
-    font-size: 18px;
 }
 
 a {
@@ -75,19 +56,22 @@ a:hover {
 
 .filters {
     display: flex;
-    padding-top: 20px;
+    margin-top: 0px;
     /* margin-right: 5px; */
 }
 
 .filter1 {
-   margin-left: 0px;
+   margin-left: 10vw;
 }
 .filter2 {
-    margin-left: 10px;
+    margin-left: 10vw;
+ }
+ .filter3 {
+    margin-left: 2vw;
  }
 
 
-#filter-module {
+ #filter-module {
     font-size: 18px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
@@ -105,18 +89,35 @@ a:hover {
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
+    margin-left: -120px;
 }
 
 h2 {
     font-size: 18px;
+    flex: 1;
 }
 
 .nomore {
     font-size: 20px;
-    padding-top: 35px;
 }
-
-.title-container {
+.study-group {
+    display: flex;
+    align-items: center; /* Vertical alignment if needed */
+  }
+ 
+  button {
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 7vh;
+    width: 12vw;
+    background-color: #556FFF;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .title-container {
     display: flex;
     align-items: center;
 }
@@ -128,6 +129,7 @@ h2 {
     border: none;
     font-size: 50px;
     cursor: pointer;
-    margin-right: -20px0;
-    margin-left: -0; /* Add spacing between the title and the button */
+    margin-right: -20px;
+    margin-left: -150px; /* Add spacing between the title and the button */
 }
+

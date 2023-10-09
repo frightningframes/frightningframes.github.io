@@ -1,35 +1,39 @@
 <app-navbar></app-navbar>
 
-<div class="tutors-container">
-
-    <h1>Find a Tutor</h1>
-    <div class="filters">
-        <div class="filter1">
-            <select id="filter-module" #filterModule (change)="filterGroups(filterModule.value, filterExperience.value)">
-                <option value="" disabled selected style="display:none;">Modules</option>
-                <option value="COS333">COS333</option>
-                <option value="COS330">COS330</option>
-                <option value="COS341">COS341</option>
-                <option value="COS301">COS301</option>
-                <option value="IMY310">IMY310</option>
-                <option value="IMY320">IMY320</option>
-            </select>
-        </div>
-        
-        <div class="filter2">
-            <select id="filter-experience"  #filterExperience (change)="filterGroups(filterModule.value, filterExperience.value)">
-                <option value="" disabled selected style="display:none;">Experience</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4+">4+</option>
-            </select>
-        </div>
-        
+<div class="papers-container">
+    <div class="title-container">
+        <button (click)="goBack()" class="back-button">
+            &larr; 
+        </button>
+        <h1>Find a Tutor</h1>
     </div>
+</div>
 
-   
-    <div *ngFor="let tutor of filteredGroups" class="tutor">
+<div class="filters">   
+    <div class="filter2">
+        <select id="filter-module" #filterModule (change)="filterGroups(filterModule.value,filterExperience.value)">
+            <option value="" disabled selected style="display:none;">Modules</option>
+            <option value="COS333">COS333</option>
+            <option value="COS330">COS330</option>
+            <option value="COS341">COS341</option>
+            <option value="COS301">COS301</option>
+            <option value="IMY310">IMY310</option>
+            <option value="IMY320">IMY320</option>
+        </select>
+    </div>  
+    <div class="filter2">
+        <select id="filter-experience"  #filterExperience (change)="filterGroups(filterModule.value, filterExperience.value)">
+            <option value="" disabled selected style="display:none;">Experience</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4+">4+</option>
+        </select>
+    </div>
+</div>
+
+<div class="papers-container">
+    <div class="paper" *ngFor="let tutor of filteredGroups">
         <div class="tutor-info">
             <h2>{{ tutor.Module }} Tutor</h2>
             <p><strong>Name:</strong> {{ tutor.name }}</p>
@@ -38,9 +42,14 @@
             <p><strong>Description:</strong> {{ tutor.description }}</p>
             <a href="#">Contact Tutor</a>
         </div>
-
         <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image">
     </div>
-    
-      
-        <div class="nomore" *ngIf="filteredGroups.length === 0" class="nomore">No tutors found!</div>
+    <div *ngIf="filteredGroups.length === 0" class="nomore">No study groups found!</div>
+</div>
+
+  
+
+
+
+
+  
