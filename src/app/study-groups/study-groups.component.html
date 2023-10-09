@@ -1,8 +1,12 @@
 <app-navbar></app-navbar>
 
 <div class="papers-container">
-    <h1>Searching for Study Groups</h1>
-
+    <div class="title-container">
+        <button (click)="goBack()" class="back-button">
+            &larr; <!-- Left arrow HTML entity -->
+        </button>
+        <h1>Search for Study Groups</h1>
+    </div>
 </div>
 
 <div class="filters">   
@@ -21,10 +25,14 @@
 
 <div class="papers-container">
     <div class="paper" *ngFor="let paper of filteredGroups">
-        <h2>{{ paper.Module }} - {{paper.Type}} study group</h2>
+        <div class="study-group">
+            <h2>{{ paper.Module }} - {{ paper.Type }} study group</h2>
+            <button>Join group</button>
+        </div>
     </div>
     <div *ngIf="filteredGroups.length === 0" class="nomore">No study groups found!</div>
 </div>
 
+  
 
 

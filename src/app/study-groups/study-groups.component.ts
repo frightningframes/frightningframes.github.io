@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 interface StudyGroup {
   Module: string;
@@ -12,6 +13,8 @@ interface StudyGroup {
   styleUrls: ['./study-groups.component.css']
 })
 export class StudyGroupsComponent {
+
+  constructor(private location: Location) {}
 
   study: StudyGroup[] = [
     { Module: 'COS333', Type:'Practical'},
@@ -43,5 +46,9 @@ export class StudyGroupsComponent {
       (module_ === '' || group.Module === module_)
     );
   console.log(this.filteredGroups)
+  }
+
+  goBack(): void {
+    this.location.back(); 
   }
 }

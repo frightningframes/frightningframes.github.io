@@ -77,8 +77,42 @@ a:hover {
 
 h2 {
     font-size: 18px;
+    flex: 1;
 }
 
 .nomore {
     font-size: 20px;
 }
+.study-group {
+    display: flex;
+    align-items: center; /* Vertical alignment if needed */
+  }
+ 
+  button {
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 7vh;
+    width: 12vw;
+    background-color: #556FFF;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    color: black;
+    margin-top: -60px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: -20px;
+    margin-left: -150px; /* Add spacing between the title and the button */
+}
+

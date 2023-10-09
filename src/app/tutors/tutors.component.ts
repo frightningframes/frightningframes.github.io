@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 interface Tutors {
   Module: string;
@@ -16,6 +17,7 @@ interface Tutors {
 })
 export class TutorsComponent {
 
+  constructor(private location: Location) {}
 
   study: Tutors[] = [
     { 
@@ -96,5 +98,9 @@ ngOnInit(): void {
       (module_ === '' || group.Module === module_) &&
       (experience === '' || group.experience === experience) 
     );
+  }
+
+  goBack(): void {
+    this.location.back(); 
   }
 }

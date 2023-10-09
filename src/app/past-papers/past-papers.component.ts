@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 interface PastPaper {
   Year: string;
@@ -12,6 +13,8 @@ interface PastPaper {
   styleUrls: ['./past-papers.component.css']
 })
 export class PastPapersComponent {
+
+  constructor(private location: Location) {}
   pastPapers: PastPaper[] = [
     { Year: '2018', Module: 'COS333', Assessment: 'Tutorial 1' },
     { Year: '2019', Module: 'COS301', Assessment: 'Class test 1' },
@@ -47,5 +50,9 @@ export class PastPapersComponent {
       (assessment === '' || paper.Assessment === assessment)
     );
   // console.log(this.filteredPapers)
+  }
+
+  goBack(): void {
+    this.location.back(); 
   }
 }

@@ -115,3 +115,19 @@ h2 {
     font-size: 20px;
     padding-top: 35px;
 }
+
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    color: black;
+    margin-top: -60px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: -20px0;
+    margin-left: -0; /* Add spacing between the title and the button */
+}
