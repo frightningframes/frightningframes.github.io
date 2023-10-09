@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 
 interface StudyGroup {
@@ -33,6 +33,9 @@ export class StudyGroupsComponent {
     // Add more past papers here
 ];
 
+ngOnInit(): void {
+  this.filteredGroups = this.study;  // Showing all study groups initially
+}
 
 
   filteredGroups: StudyGroup[] = []; // Initialize an array for filtered papers

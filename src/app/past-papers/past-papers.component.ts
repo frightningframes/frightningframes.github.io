@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 import { Location } from '@angular/common';
 
 interface PastPaper {
@@ -36,6 +36,9 @@ export class PastPapersComponent {
 ];
 
 
+ngOnInit(): void {
+  this.filteredPapers = this.pastPapers;
+}
 
   filteredPapers: PastPaper[] = []; // Initialize an array for filtered papers
   paper = {}
