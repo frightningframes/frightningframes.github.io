@@ -9,9 +9,11 @@ h1 {
     color: #333; /* Dark text color for better contrast on white background */
     /* text-align: center; */
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 40px;
     padding-top: 0;
     font-size: 42px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .job {
@@ -46,3 +48,32 @@ a {
 a:hover {
     background-color: #334AB7;
 }
+
+button {
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 7vh;
+    width: 12vw;
+    background-color: #556FFF;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    color: black;
+    margin-top: -20px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    margin-right: -20px;
+    margin-left: -10px; /* Add spacing between the title and the button */
+}
+

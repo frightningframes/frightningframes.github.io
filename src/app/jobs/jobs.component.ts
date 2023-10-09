@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-jobs',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class JobsComponent {
 
+  
+  constructor(private location: Location) {}
+
+ 
+    goBack(): void {
+      this.location.back(); 
+    }
 }

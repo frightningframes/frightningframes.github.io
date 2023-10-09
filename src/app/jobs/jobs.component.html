@@ -1,11 +1,15 @@
 <app-navbar></app-navbar>
 
-<!-- job.component.html -->
+<div class="papers-container">
+    <div class="title-container">
+        <button (click)="goBack()" class="back-button">
+            &larr; <!-- Left arrow HTML entity -->
+        </button>
+        <h1>Job Listings</h1>
+    </div>
+</div>
 
-<div class="jobs-container">
-    <h1>Job Listings</h1>
-
-    <!-- Job 1 -->
+<div class="jobs-container">   
     <div class="job">
         <h2>Software Engineer</h2>
         <p><strong>Company:</strong> Tech Corp</p>
@@ -54,7 +58,9 @@
         <p><strong>Description:</strong> Manage projects, ensure timely delivery, and coordinate between teams.</p>
         <a href="#">Apply Now</a>
     </div>
-
-    <!-- Add more job listings as needed -->
-
 </div>
+
+
+  
+
+
