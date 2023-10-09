@@ -34,6 +34,7 @@
 
 <div class="papers-container">
     <div class="paper" *ngFor="let tutor of filteredGroups">
+        
         <div class="tutor-info">
             <h2>{{ tutor.Module }} Tutor</h2>
             <p><strong>Name:</strong> {{ tutor.name }}</p>
@@ -42,7 +43,7 @@
             <p><strong>Description:</strong> {{ tutor.description }}</p>
             <a href="#">Contact Tutor</a>
         </div>
-        <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image">
+        <!-- <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image"> -->
     </div>
     <div *ngIf="filteredGroups.length === 0" class="nomore">No tutors found!</div>
 </div>

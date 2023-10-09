@@ -15,9 +15,10 @@ html {
 }
 
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
+  margin-top: -20px;
 }
 
 .floating-card {
@@ -38,11 +39,10 @@ h2 {
 .left-side {
   flex: 1;
   text-align: center;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* Push elements apart */
+  justify-content: center;
+  align-items: center;
 }
 
 .right-side {
@@ -93,6 +93,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   align-items: center;
   margin-left: 6vw;
   font-family: 'Oswald', sans-serif;
+  margin-top: 20px;
 }
 
 img {
@@ -110,4 +111,31 @@ img {
 /* Update input styles to highlight invalid email */
 #email:invalid {
   border-color: red;
+}
+
+  p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+  }
+
+  a {
+    color:#556FFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    font-weight: bold; /* Make the text bold on hover */
+    transform: translateY(-2px); /* Lift the text by 2 pixels on hover */
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: -15px;
+ margin-left: 0px;
+ font-family: 'Oswald', sans-serif;
 }

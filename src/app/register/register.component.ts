@@ -1,31 +1,39 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+    selector: 'app-register',
+    templateUrl: './register.component.html',
+    styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  username: string = '';
-  password: string = '';
-  confirmPassword: string = '';
 
-  registrationError: string = '';
-  registrationSuccess: boolean = false;
+    constructor(private router: Router) { }
 
-  registerUser() {
-    // Check if any text field is left open (empty)
-    if (!this.username || !this.password || !this.confirmPassword) {
-      this.registrationError = 'Please fill in all fields';
-      this.registrationSuccess = false;
-    } else if (this.password !== this.confirmPassword) {
-      this.registrationError = 'Passwords do not match';
-      this.registrationSuccess = false;
-    } else {
-      this.registrationError = '';
-      this.registrationSuccess = true;
+    username: string = '';
+    password: string = '';
+    confirmPassword: string = '';
 
-      // You can perform additional actions here, such as displaying a success message
+    passwordMismatchError: boolean = false; // Add a variable for password mismatch error
+    registrationSuccess: boolean = false;
+
+    registerUser() {
+        if (this.username && this.password && this.confirmPassword) {
+            if (this.password === this.confirmPassword) {
+                // Form is valid, passwords match
+                this.registrationSuccess = true;
+                this.passwordMismatchError = false; // Clear the password mismatch error
+                // Example navigation to the "/BIT" page
+                this.router.navigate(['/BIT']);
+            } else {
+                // Passwords do not match, display the password mismatch error
+                this.passwordMismatchError = true;
+                this.registrationSuccess = false;
+            }
+        } else {
+            // Handle the case where any field is empty
+            this.passwordMismatchError = false; // Clear the password mismatch error
+            this.registrationSuccess = false;
+        }
     }
-  }
 }

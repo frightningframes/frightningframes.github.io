@@ -10,10 +10,29 @@ body {
   }
   
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     font-family: 'Oswald', sans-serif;
     font-size: 35px;
+    margin-top: 0px;
   }
+
+  p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin-left: 15px;
+  }
+
+  a {
+    color:#556FFF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.2s ease;
+  }
+
+  a:hover {
+    font-weight: bold; /* Make the text bold on hover */
+    transform: translateY(-2px); /* Lift the text by 2 pixels on hover */
+}
   
   .floating-card {
     display: flex;
@@ -33,11 +52,10 @@ body {
   .left-side {
     flex: 1;
     text-align: center;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* Push elements apart */
+    justify-content: center;
+    align-items: center;
   }
   
   .right-side {
@@ -86,10 +104,20 @@ body {
     cursor: pointer;
     width: 20vw;
     align-items: center;
-    margin-left: 6vw;
+    margin-left: 5.5vw;
     font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
   }
   
   img {
     height: 100%;
   }
+
+  .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: -15px;
+ margin-left: 0px;
+ font-family: 'Oswald', sans-serif;
+}

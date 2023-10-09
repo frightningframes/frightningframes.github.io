@@ -16,22 +16,29 @@
       <!-- <button class="close-button" (click)="closeCard()">X</button> -->
       <div class="left-side">
         <h2>ScholarSphere</h2>
-
-        <!-- <label for="username">Username:</label> -->
-        <input type="text" [(ngModel)]="username" name="username" placeholder="Enter your username">
-
-        <!-- <label for="password">Password:</label> -->
-        <input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password">
-        
-        <div *ngIf="registrationError" style="color: red;">{{ registrationError }}</div>
-        
-        <!-- Display a success message if registration is successful -->
-        <div *ngIf="registrationSuccess" style="color: green;">Registration successful!</div>
-        
-        <button  (click)="registerUser()" routerLink="/BIT">Login</button>
-
-
-      </div>
+    
+        <form (ngSubmit)="registerUser()" #loginForm="ngForm">
+            <!-- Username input -->
+            <input class="one" type="text" [(ngModel)]="username" name="username" placeholder="Enter your username" required>
+    
+            <!-- Password input -->
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required>
+            
+            <!-- Display error message if fields are not filled -->
+            <div *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touched)" class="error-message">Please fill in all fields</div>
+            
+            <!-- Display a success message if registration is successful -->
+            <div *ngIf="registrationSuccess" style="color: green;">Login successful!</div>
+            
+            <!-- Login button -->
+            <button type="submit" [disabled]="loginForm.invalid">Login</button>
+        </form>
+    
+        <!-- Registration link -->
+        <p>Don't have an account? <a routerLink="/register">Register</a></p>
+    </div>
+    
+    
       <div class="right-side">
         <img src="assets/purple.jpeg" alt="Image">
       </div>
