@@ -115,6 +115,6 @@
     align-items: center;
 }
 
-div{
-    text-decoration: none;
+a {
+    text-decoration:none;
 }

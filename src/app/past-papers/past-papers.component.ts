@@ -31,7 +31,6 @@ export class PastPapersComponent {
     { Year: '2020', Module: 'COS301', Assessment: 'Class test 3' },
     { Year: '2021', Module: 'COS341', Assessment: 'Semester test 1' },
     { Year: '2022', Module: 'IMY310', Assessment: 'Semester test 2' },
-    { Year: '2023', Module: 'COS330', Assessment: 'Exam' },
     // Add more past papers here
 ];
 
