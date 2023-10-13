@@ -18,6 +18,9 @@ import { PastPapersComponent } from './past-papers/past-papers.component';
 import { TutorsComponent } from './tutors/tutors.component';
 import { FormsModule } from '@angular/forms';
 import { StudyGroupsComponent } from './study-groups/study-groups.component';
+import { ProfileComponent } from './profile/profile.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -37,7 +40,10 @@ import { StudyGroupsComponent } from './study-groups/study-groups.component';
     JobsComponent,
     PastPapersComponent,
     TutorsComponent,
-    StudyGroupsComponent
+    StudyGroupsComponent,
+    ProfileComponent,
+    QuizComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

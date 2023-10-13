@@ -19,7 +19,7 @@
     
         <form (ngSubmit)="registerUser()" #loginForm="ngForm">
             <!-- Username input -->
-            <input class="one" type="text" [(ngModel)]="username" name="username" placeholder="Enter your username" required>
+            <input class="one" type="email" [(ngModel)]="username" name="username" placeholder="Enter your email" required>
     
             <!-- Password input -->
             <input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required>
