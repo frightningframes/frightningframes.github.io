@@ -73,6 +73,7 @@ a:hover {
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
+    width: 8vw;
 }
 
 #filter-module {
@@ -83,6 +84,7 @@ a:hover {
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
+    width: 8vw;
 }
 
 #filter-assessment {
@@ -93,6 +95,7 @@ a:hover {
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
+    width: 8vw;
 }
 
 .nomore {

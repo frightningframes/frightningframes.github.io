@@ -31,11 +31,16 @@
 }
 
 .section:hover::before {
-    opacity: 1; /* Make the overlay visible on hover */
+    opacity: 1; 
+    backdrop-filter: blur(5px);
 }
 
 .section-heading {
     color: white;
+}
+
+.section:hover .section-heading {
+    filter: blur(0); /* Reset blur for the text */
 }
 
 .section::before {
@@ -45,7 +50,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.5); 
     border-radius: 15px;
     opacity: 0; /* Initially invisible */
     transition: opacity 0.3s;

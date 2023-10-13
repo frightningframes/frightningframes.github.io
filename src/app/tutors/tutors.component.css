@@ -64,9 +64,11 @@ a:hover {
 
 .filter1 {
    margin-left: 10vw;
+   width: 50vw;
 }
 .filter2 {
     margin-left: 10vw;
+    
  }
  .filter3 {
     margin-left: 2vw;
@@ -81,6 +83,7 @@ a:hover {
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
+    width: 8vw;
 }
 
 #filter-experience {
@@ -92,6 +95,7 @@ a:hover {
     padding: 5px;
     font-family: 'Oswald', sans-serif;
     margin-left: -120px;
+    width: 8vw;
 }
 
 h2 {
@@ -135,3 +139,6 @@ h2 {
     margin-left: -150px; /* Add spacing between the title and the button */
 }
 
+value {
+    width: 20vw;
+}
