@@ -147,12 +147,12 @@ nav a {
   box-shadow: 0 0 10px #556FFF, 0 0 40px #556FFF, 0 0 80px #556FFF;
 }
 
-button:hover{
+/* button:hover{
   color: #255784;
   background: #556FFF;
   box-shadow: 0 0 10px #556FFF, 0 0 40px #556FFF, 0 0 80px #556FFF;
   transition-delay: 1s;
-}
+} */
 
 button span{
   position: absolute;
