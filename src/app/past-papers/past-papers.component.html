@@ -9,6 +9,7 @@
     </div>
 </div>
 
+
 <div class="filters">
     <div class="filter1">
         <select id="filter-year" #filterYear (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
@@ -42,7 +43,9 @@
             <option value="Exam">Exam</option>
         </select>
     </div>
-    
+    <div class="todo-container">
+      <app-todo-list></app-todo-list>
+  </div>
 </div>
 
       <div class="papers-two">
@@ -52,10 +55,10 @@
           </div>
         <div *ngIf="filteredPapers.length === 0" class="nomore">No papers found!</div>
       </div>
-    </div>
+    
     <app-piechart  [data]="donutChartData" [labels]="donutChartLabels"></app-piechart>
 
-  </div>
+
   
 
 
