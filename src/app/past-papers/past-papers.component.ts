@@ -13,7 +13,7 @@ interface PastPaper {
   styleUrls: ['./past-papers.component.css']
 })
 export class PastPapersComponent {
-  private trailer: HTMLElement | undefined;
+  // private trailer: HTMLElement | undefined;
 
 
   donutChartData: number[] = [30, 70]; // Example data
@@ -43,7 +43,7 @@ export class PastPapersComponent {
 
 ngOnInit(): void {
   this.filteredPapers = this.pastPapers;
-  this.trailer = this.el.nativeElement.querySelector('#trailer');
+  // this.trailer = this.el.nativeElement.querySelector('#trailer');
 }
 
   filteredPapers: PastPaper[] = []; // Initialize an array for filtered papers
@@ -70,27 +70,27 @@ ngOnInit(): void {
     window.open(externalURL, '_blank'); // Open in a new tab or window
   }
 
-  @HostListener('mousemove', ['$event'])
-  onMouseMove(event: MouseEvent) {
-    const num = document.querySelector(".page-nav") as HTMLElement;
-    const num1 = document.querySelector("header") as HTMLElement;
-    if (this.trailer) {
-      const x = event.clientX - this.trailer.offsetWidth / 2;
-      const y = event.clientY - this.trailer.offsetHeight / 2 - num.offsetHeight - num1.offsetHeight;
+  // @HostListener('mousemove', ['$event'])
+  // onMouseMove(event: MouseEvent) {
+  //   const num = document.querySelector(".page-nav") as HTMLElement;
+  //   const num1 = document.querySelector("header") as HTMLElement;
+  //   if (this.trailer) {
+  //     const x = event.clientX - this.trailer.offsetWidth / 2;
+  //     const y = event.clientY - this.trailer.offsetHeight / 2 - num.offsetHeight - num1.offsetHeight;
 
-      // Use the animate function to transition the position smoothly
-      this.trailer.animate(
-        [
-          { transform: `translate(${this.trailer.style.transform})` },
-          { transform: `translate(${x}px, ${y}px)` }
-        ],
-        {
-          duration: 300, // Animation duration in milliseconds
-          easing: 'ease-in-out', // Easing function (e.g., ease-in-out)
-          fill: 'forwards'
-        }
-      );
-    }
-  }
+  //     // Use the animate function to transition the position smoothly
+  //     this.trailer.animate(
+  //       [
+  //         { transform: `translate(${this.trailer.style.transform})` },
+  //         { transform: `translate(${x}px, ${y}px)` }
+  //       ],
+  //       {
+  //         duration: 300, // Animation duration in milliseconds
+  //         easing: 'ease-in-out', // Easing function (e.g., ease-in-out)
+  //         fill: 'forwards'
+  //       }
+  //     );
+  //   }
+  // }
 
 }
