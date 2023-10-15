@@ -1,18 +1,38 @@
 .fullpage-slideshow {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 230vh;
     overflow: hidden;
+    background-image: url('../../assets/wave.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .gif-container{
+    color: black;
+    display: flex;
+    margin-top: 10%;
   }
   
+  .fail-text{
+    flex-grow: 1;
+    margin: auto;
+    font-size: x-large;
+    padding: 4%;
+  }
+
+  .gif{
+    width: 25%;
+    margin-right: 20%;
+  }
+
   .constant-text {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -22,39 +42,6 @@
   h2 {
     margin-top: -5px;
     font-size: 50px;
-    margin-bottom: 250px;
-  }
-  
-  
-  .slideshow-container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .mySlides {
-    display: none;
-    text-align: center;
-    /* padding: 20px; */
-    background-color: #f2f2f2;
-  }
-  
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-
-  .slidies {
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  @keyframes fade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { opacity: 0; }
   }
   
   .logo {
@@ -73,24 +60,125 @@
   .faculty-links {
     display: flex;
     justify-content: center;
-    margin-top: 20px; 
+    margin-top: 4%;
+    height: 40vh;
+    width: 100%; 
+    gap: 5%;
+}
+
+.faculty-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+  height: 40vh;
+  width: 100%; 
+  gap: 5%;
 }
 
 .faculty-links a {
-    text-align: center;
-    font-size: 25px;
-    padding: 10px 50px; 
-    margin: 0 5px; 
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
+  text-align: center;
+  font-size: 20px;
+  margin: 0 5px; 
+  color: white; 
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, opacity 0.3s ease; 
+  display: block; /* Make the links block elements */
+  width: 25%;
+}
+
+.faculty-link a {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 5px; 
+  color: white; 
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, opacity 0.3s ease; 
+  display: block; /* Make the links block elements */
+  width: 25%;
+}
+
+/* Adjust the div styles if needed */
+.faculty-links a div {
+  width:100%;
+  height: 100%;
+}
+
+.faculty-link a div {
+  width:100%;
+  height: 100%;
+}
+
+.faculty-links a:nth-child(1){
+  background-image: url('../../assets/bit.jpg');
+  background-size: cover;
+  height: 100%;
+  background-position: 40% center;
+}
+
+.faculty-links a:nth-child(2){
+  background-image: url('../../assets/computer-science.jpg');
+}
+
+.faculty-links a:nth-child(3){
+  background-image: url('../../assets/IT.webp');
+  /* background-position: center; */
+  background-size: cover;
+}
+
+.faculty-link a:nth-child(1){
+  background-image: url('../../assets/computer-engineering.jpg');
+  background-size: cover;
+}
+
+.faculty-link a:nth-child(2){
+  background-image: url('../../assets/informatics.jpg');
+  background-size: cover;
+}
+
+.faculty-link a:nth-child(3){
+  background-image: url('../../assets/multimedia.jpg');
+  background-size: cover;
 }
 
 .faculty-links a:hover {
-  text-decoration: double;
-  color:#556FFF;
+  background-color: #556FFF;
+  transform: scale(1.05);
+  font-size: 25px;
+  text-decoration: none;
 }
 
+.faculty-links a:hover::before {
+  opacity: 1; 
+  backdrop-filter: blur(10px);
+}
 
+.faculty-link a:hover {
+  background-color: #556FFF;
+  transform: scale(1.05);
+  font-size: 25px;
+  text-decoration: none;
+}
 
+.faculty-link a:hover::before {
+  opacity: 1; 
+  backdrop-filter: blur(10px);
+}
+
+.website-description{
+  width: 50%;
+  margin: auto;
+  font-size:large;
+}
+
+.faculty-img{
+  width: 30%;
+}
+
+.faculty-heading{
+  margin: auto;
+  color: black;
+  font-size: xx-large;
+  margin-top: 2%;
+}
