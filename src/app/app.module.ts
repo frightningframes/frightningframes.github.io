@@ -21,6 +21,7 @@ import { StudyGroupsComponent } from './study-groups/study-groups.component';
 import { ProfileComponent } from './profile/profile.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { AboutComponent } from './about/about.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { AboutComponent } from './about/about.component';
     StudyGroupsComponent,
     ProfileComponent,
     QuizComponent,
-    AboutComponent
+    AboutComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
