@@ -63,4 +63,10 @@ ngOnInit(): void {
     const externalURL = 'https://linksfunda.com/study-whatsapp-group-link/';
     window.open(externalURL, '_blank'); // Open in a new tab or window
   }
+
+  naviagtetoWhat() {
+    const externalURL = 'https://www.whatsappgroupsjoinlink.com/study-whatsapp-group-link/';
+    window.open(externalURL, '_blank'); // Open in a new tab or window
+  }
+  
 }

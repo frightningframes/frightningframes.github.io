@@ -21,7 +21,9 @@
             <option value="IMY320">IMY320</option>
         </select>
     </div>  
+    <button class="create" (click)="naviagtetoWhat()">Create Group</button>
 </div>
+
 
 <div class="papers-container">
     <div class="paper" *ngFor="let group of filteredGroups">
@@ -33,6 +35,7 @@
         <button (click)="navigateToExternalURL()">Join Group</button>
       </div>
     </div>
+
     <div *ngIf="filteredGroups.length === 0" class="nomore">No study groups found!</div>
   </div>
 
