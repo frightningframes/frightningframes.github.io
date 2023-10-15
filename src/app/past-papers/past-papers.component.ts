@@ -1,4 +1,4 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit  } from '@angular/core';
 import { Location } from '@angular/common';
 
 interface PastPaper {
@@ -13,8 +13,9 @@ interface PastPaper {
   styleUrls: ['./past-papers.component.css']
 })
 export class PastPapersComponent {
+  private trailer: HTMLElement | undefined;
 
-  constructor(private location: Location) {}
+  constructor(private location: Location, private el: ElementRef) {}
   pastPapers: PastPaper[] = [
     { Year: '2018', Module: 'COS333', Assessment: 'Tutorial 1' },
     { Year: '2019', Module: 'COS301', Assessment: 'Class test 1' },
@@ -37,6 +38,7 @@ export class PastPapersComponent {
 
 ngOnInit(): void {
   this.filteredPapers = this.pastPapers;
+  this.trailer = this.el.nativeElement.querySelector('#trailer');
 }
 
   filteredPapers: PastPaper[] = []; // Initialize an array for filtered papers
@@ -57,4 +59,28 @@ ngOnInit(): void {
   goBack(): void {
     this.location.back(); 
   }
+
+  @HostListener('mousemove', ['$event'])
+  onMouseMove(event: MouseEvent) {
+    const num = document.querySelector(".page-nav") as HTMLElement;
+    const num1 = document.querySelector("header") as HTMLElement;
+    if (this.trailer) {
+      const x = event.clientX - this.trailer.offsetWidth / 2;
+      const y = event.clientY - this.trailer.offsetHeight / 2 - num.offsetHeight - num1.offsetHeight;
+
+      // Use the animate function to transition the position smoothly
+      this.trailer.animate(
+        [
+          { transform: `translate(${this.trailer.style.transform})` },
+          { transform: `translate(${x}px, ${y}px)` }
+        ],
+        {
+          duration: 300, // Animation duration in milliseconds
+          easing: 'ease-in-out', // Easing function (e.g., ease-in-out)
+          fill: 'forwards'
+        }
+      );
+    }
+  }
+
 }

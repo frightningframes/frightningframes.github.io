@@ -1,9 +1,31 @@
+#trailer {
+    width: 40px;
+    /* Set the width of the trailer */
+    height: 40px;
+    /* Set the height of the trailer */
+    border: 2px solid grey;
+    /* Set the grey outline */
+    border-radius: 50%;
+    /* Make the trailer a circle */
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    cursor: none;
+}
+
 .papers-container {
     width: 80%;
     margin: 20px auto;
     padding-top: 20px;
     padding-bottom: 5px;
     font-family: 'Oswald', sans-serif;
+    cursor: none;
 }
 
 h1 {
