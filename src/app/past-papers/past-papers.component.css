@@ -66,7 +66,7 @@ a:hover {
     margin-left: 2vw;
  }
 #filter-year {
-    font-size: 18px;
+    font-size: 20px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
@@ -77,25 +77,25 @@ a:hover {
 }
 
 #filter-module {
-    font-size: 18px;
+    font-size: 20px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
-    width: 8vw;
+    width: 9vw;
 }
 
 #filter-assessment {
-    font-size: 18px;
+    font-size: 20px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
-    width: 8vw;
+    width: 9vw;
 }
 
 .nomore {

@@ -41,7 +41,7 @@
             <p><strong>Rate:</strong> R{{ tutor.rate }}/hr</p>
             <p><strong>Experience:</strong> {{ tutor.experience }} years</p>
             <p><strong>Description:</strong> {{ tutor.description }}</p>
-            <a href="#">Contact Tutor</a>
+            <button (click)="navigateToExternalURL()">Contact Tutor</button>
         </div>
         <!-- <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image"> -->
     </div>

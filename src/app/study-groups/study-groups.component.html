@@ -24,14 +24,20 @@
 </div>
 
 <div class="papers-container">
-    <div class="paper" *ngFor="let paper of filteredGroups">
-        <div class="study-group">
-            <h2>{{ paper.Module }} - {{ paper.Type }} study group</h2>
-            <button>Join group</button>
-        </div>
+    <div class="paper" *ngFor="let group of filteredGroups">
+      <div class="study-group">
+        <h2>{{ group.Module }} - {{ group.StudyType }} Study Group</h2>
+        <p><strong>Group Type: </strong>{{ group.Type }}</p>
+        <p><strong>Total Participants: </strong>{{ group.Participants }}</p>
+        <p><strong>Group Setting: </strong>{{ group.Settings }}</p>
+        <button (click)="navigateToExternalURL()">Join Group</button>
+      </div>
     </div>
     <div *ngIf="filteredGroups.length === 0" class="nomore">No study groups found!</div>
-</div>
+  </div>
+
+
+  
 
   
 

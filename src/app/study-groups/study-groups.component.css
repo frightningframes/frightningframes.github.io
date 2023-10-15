@@ -66,14 +66,14 @@ a:hover {
 
 
 #filter-module {
-    font-size: 18px;
+    font-size: 20px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
-    width: 8vw;
+    width: 9vw;
 }
 
 h2 {
@@ -85,12 +85,13 @@ h2 {
     font-size: 20px;
 }
 .study-group {
-    display: flex;
-    align-items: center; /* Vertical alignment if needed */
+    padding-left: 30px;
+    /* display: flex;
+    align-items: center; Vertical alignment if needed */
   }
  
   button {
-    margin-left: 10px;
+    margin-left: 0px;
     border-radius: 10px;
     height: 7vh;
     width: 12vw;
@@ -117,3 +118,20 @@ h2 {
     margin-left: -150px; /* Add spacing between the title and the button */
 }
 
+button {
+    margin-left: px;
+    border-radius: 7px;
+    height: 6vh;
+    width: 9vw;
+    background-color: #556FFF;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  button:hover {
+    background-color: #334AB7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

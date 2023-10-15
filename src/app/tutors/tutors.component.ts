@@ -103,4 +103,9 @@ ngOnInit(): void {
   goBack(): void {
     this.location.back(); 
   }
+
+  navigateToExternalURL() {
+    const externalURL = 'https://www.teachme2.com/tutors-sandton?campaignid=1522289648&adgroupid=61121397987&feeditemid=59371602795&adposition=&targetid=dsa-1570839335174&loc_physical_ms=1028682&network=g&creative=659147362037&keyword=&matchtype=&device=c&devicemodel=&gad=1&gclid=Cj0KCQjwm66pBhDQARIsALIR2zCTmo4wzlu0WbeqdVLLS8Z0A02Zul3zHab0wjW33-FC91J2K_lFjagaArsXEALw_wcB';
+    window.open(externalURL, '_blank'); // Open in a new tab or window
+  }
 }
