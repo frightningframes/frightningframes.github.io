@@ -64,6 +64,8 @@
     height: 40vh;
     width: 100%; 
     gap: 5%;
+    opacity: 1; 
+    backdrop-filter: blur(5px);
 }
 
 .faculty-link {
@@ -118,8 +120,16 @@
 }
 
 .faculty-links a:nth-child(2){
+  /* filter: blur(5px);
+  transition: filter 0.3s; */
   background-image: url('../../assets/computer-science.jpg');
 }
+/* .faculty-links a:nth-child(2) hover{
+  filter: blur(5px);
+  transition: filter 0.3s;
+} */
+  /* background-image: url('../../assets/computer-science.jpg');
+} */
 
 .faculty-links a:nth-child(3){
   background-image: url('../../assets/IT.webp');
@@ -128,6 +138,7 @@
 }
 
 .faculty-link a:nth-child(1){
+  
   background-image: url('../../assets/computer-engineering.jpg');
   background-size: cover;
 }
@@ -181,4 +192,9 @@
   color: black;
   font-size: xx-large;
   margin-top: 2%;
+}
+
+.faculty-links a:hover + .blur-on-hover {
+  filter: blur(5px); /* Adjust the blur radius as needed */
+  transition: filter 0.3s; /* Add a transition for a smoother effect */
 }
