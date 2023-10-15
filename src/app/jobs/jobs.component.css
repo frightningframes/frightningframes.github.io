@@ -64,6 +64,7 @@ button {
   .title-container {
     display: flex;
     align-items: center;
+    margin-left: 10vw;
 }
 
 .back-button {
