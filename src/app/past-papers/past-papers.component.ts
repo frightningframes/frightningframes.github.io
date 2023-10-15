@@ -14,6 +14,9 @@ interface PastPaper {
 })
 export class PastPapersComponent {
 
+  donutChartData: number[] = [30, 70]; // Example data
+  donutChartLabels: string[] = ['Completed', 'Remaining']; 
+
   constructor(private location: Location) {}
   pastPapers: PastPaper[] = [
     { Year: '2018', Module: 'COS333', Assessment: 'Tutorial 1' },
@@ -56,5 +59,10 @@ ngOnInit(): void {
 
   goBack(): void {
     this.location.back(); 
+  }
+
+  navigateToExternalURL() {
+    const externalURL = 'https://gradfast.com/modules';
+    window.open(externalURL, '_blank'); // Open in a new tab or window
   }
 }

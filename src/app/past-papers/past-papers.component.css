@@ -1,10 +1,24 @@
 .papers-container {
     width: 80%;
     margin: 20px auto;
-    padding-top: 20px;
+    margin-top:6vh;
     padding-bottom: 5px;
     font-family: 'Oswald', sans-serif;
 }
+
+.papers-two {
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+    width: 80%;
+    margin: 20px auto;
+    margin-top: -30vh;
+    margin-left: 10vw;
+    padding-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    min-height: 0vh; /* Set a minimum height to prevent shifting */
+}
+
 
 h1 {
     color: #333; /* Dark text color for better contrast on white background */
@@ -16,7 +30,10 @@ h1 {
 }
 
 .paper {
-   
+    display: flex;
+   width: 55vw;
+   justify-content: space-between;
+  align-items: center;
     background-color: #C5D3FE;
     border-radius: 10px;
     padding: 15px;
@@ -65,8 +82,9 @@ a:hover {
  .filter3 {
     margin-left: 2vw;
  }
+
 #filter-year {
-    font-size: 20px;
+    font-size: 18px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
@@ -77,25 +95,25 @@ a:hover {
 }
 
 #filter-module {
-    font-size: 20px;
+    font-size: 18px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
-    width: 9vw;
+    width: 8vw;
 }
 
 #filter-assessment {
-    font-size: 20px;
+    font-size: 18px;
     background-color: white; /* Change the background color to dark grey */
     color: grey; /* Change the text color to white */
     border-radius: 10px; /* Adjust the border radius as needed */
     border: 2px solid grey; /* Remove the default border */
     padding: 5px;
     font-family: 'Oswald', sans-serif;
-    width: 9vw;
+    width: 8vw;
 }
 
 .nomore {
@@ -103,16 +121,21 @@ a:hover {
 }
 
 button {
-    margin-left: 10px;
-    border-radius: 10px;
-    height: 7vh;
-    width: 12vw;
+    margin-top: 5px;
+    border-radius: 7px;
+    height: 6vh;
+    width: 9vw;
     background-color: #556FFF;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+  button:hover {
+    background-color: #334AB7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 .title-container {
     display: flex;
@@ -129,3 +152,14 @@ button {
     margin-right: -20px;
     margin-left: -150px; /* Add spacing between the title and the button */
 }
+
+.todo-container {
+    width: 25vw;
+    margin-top: -5vh;
+    margin-left: 30vw;
+    padding: 20px; /* Add padding for spacing */
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+  }

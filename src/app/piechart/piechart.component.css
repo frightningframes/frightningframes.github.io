@@ -1,0 +1,39 @@
+.donut-container {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: relative;
+}
+
+.donut-chart {
+    margin-left: 40vw;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    background-color: #ff5555; /* Red color */
+    border-radius: 50%;
+    transform-origin: 0 50%;
+}
+
+.donut-hole {
+    margin-left: 40vw;
+    width: 60%;
+    height: 60%;
+    background-color: #fff; /* White color for the inner circle */
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+}
+
+.percentage-label {
+    position: absolute;
+    margin-left: 40vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: black; /* Red text color */
+}

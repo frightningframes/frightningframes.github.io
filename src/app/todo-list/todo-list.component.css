@@ -1,0 +1,54 @@
+.todo-container {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 0%, 100%);
+    max-width: 300px;
+    font-family: 'Oswald', sans-serif;
+    /* position: fixed; */
+  }
+  
+  input {
+    width: 18vw;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10px;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #ff5555;
+    border: 1px solid #ff5555;
+    padding: 4px 8px;
+    border-radius: 20%; /* Makes the button a circle */
+    cursor: pointer;
+    transition: background-color 0.2s; /* Add a smooth transition on hover */
+  }
+
+  button:hover {
+        background-color: #ff5555;
+        color: #fff; /* Change the text color on hover to make it more visible */
+    }
+
+    h2 {
+        margin-left:100px
+    }

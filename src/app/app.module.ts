@@ -21,7 +21,10 @@ import { StudyGroupsComponent } from './study-groups/study-groups.component';
 import { ProfileComponent } from './profile/profile.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { AboutComponent } from './about/about.component';
-
+import { TodoListComponent } from './todo-list/todo-list.component';
+//import { PiechartComponent } from './piechart/piechart.component';
+// import { ChartsModule } from 'ng2-charts';
+import { PiechartComponent } from './piechart/piechart.component';
 
 
 @NgModule({
@@ -44,12 +47,14 @@ import { AboutComponent } from './about/about.component';
     StudyGroupsComponent,
     ProfileComponent,
     QuizComponent,
-    AboutComponent
+    AboutComponent,
+    TodoListComponent,
+    PiechartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

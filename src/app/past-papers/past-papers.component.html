@@ -1,56 +1,63 @@
-<app-navbar></app-navbar>
-
-<div class="papers-container">
-    <div class="title-container">
-        <!-- <button (click)="goBack()" class="back-button">
-            &larr;
-        </button> -->
-        <h1>Search for Past Papers</h1>
-    </div>
-</div>
-
-<div class="filters">
-    <div class="filter1">
-        <select id="filter-year" #filterYear (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
-            <option value="" disabled selected style="display:none;">Year</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-            <option value="2020">2020</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-        </select>
-    </div>
-    <div class="filter2">
-        <select id="filter-module" #filterModule (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
-            <option value="" disabled selected style="display:none;">Modules</option>
-            <option value="COS333">COS333</option>
-            <option value="COS330">COS330</option>
-            <option value="COS341">COS341</option>
-            <option value="COS301">COS301</option>
-            <option value="IMY310">IMY310</option>
-            <option value="IMY320">IMY320</option>
-        </select>
-    </div>
-    <div class="filter3">
-        <select id="filter-assessment" #filterAssessment (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
-            <option value="" disabled selected style="display:none;">Assessment</option>
-            <option value="Tutorials">Tutorials</option>
-            <option value="Class tests">Class tests</option>
-            <option value="Semester test 1">Semester test 1</option>
-            <option value="Semester test 2">Semester test 2</option>
-            <option value="Exam">Exam</option>
-        </select>
-    </div>
+<div class="page-container">
+    <div class="content">
+      <app-navbar></app-navbar>
+      
+      <div class="papers-container">
+        <div class="title-container">
+          <h1>Search for Past Papers</h1>
+        </div>
+      </div>
+      <div class="filters">
     
-</div>
+        <div class="filter1">
+            <select id="filter-year" #filterYear (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
+                <option value="" disabled selected style="display:none;">Year</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+        </div>
+        <div class="filter2">
+            <select id="filter-module" #filterModule (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
+                <option value="" disabled selected style="display:none;">Modules</option>
+                <option value="COS333">COS333</option>
+                <option value="COS330">COS330</option>
+                <option value="COS341">COS341</option>
+                <option value="COS301">COS301</option>
+                <option value="IMY310">IMY310</option>
+                <option value="IMY320">IMY320</option>
+            </select>
+        </div>
+        <div class="filter3">
+            <select id="filter-assessment" #filterAssessment (change)="filterPapers(filterYear.value, filterModule.value, filterAssessment.value)">
+                <option value="" disabled selected style="display:none;">Assessment</option>
+                <option value="Tutorials">Tutorials</option>
+                <option value="Class tests">Class tests</option>
+                <option value="Semester test 1">Semester test 1</option>
+                <option value="Semester test 2">Semester test 2</option>
+                <option value="Exam">Exam</option>
+            </select>
+        </div>
+        <div class="todo-container">
+            <app-todo-list></app-todo-list>
+        </div>
 
-<div class="papers-container">
-    <div class="paper" *ngFor="let paper of filteredPapers">
-        <h2 >{{ paper.Year }} - {{ paper.Module }} - {{ paper.Assessment }}</h2>
+      </div>
+
+      <div class="papers-two">
+        <div class="paper" *ngFor="let paper of filteredPapers">
+            <h2 >{{ paper.Module }} - {{paper.Year}} {{ paper.Assessment }}</h2>
+            <button (click)="navigateToExternalURL()">View Paper</button>
+          </div>
+        <div *ngIf="filteredPapers.length === 0" class="nomore">No papers found!</div>
+      </div>
     </div>
-    <div *ngIf="filteredPapers.length === 0" class="nomore">No papers found!</div>
-</div>
+    <app-piechart  [data]="donutChartData" [labels]="donutChartLabels"></app-piechart>
 
+  </div>
+  
 
 

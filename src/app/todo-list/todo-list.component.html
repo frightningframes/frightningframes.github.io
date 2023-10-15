@@ -1,0 +1,11 @@
+<!-- todo-list.component.html -->
+<div class="todo-container">
+  <h2>To Do List</h2> <!-- Added heading here -->
+  <input [(ngModel)]="newTodo" placeholder="Add a new task" (keyup.enter)="addTodo()">
+  <ul>
+    <li *ngFor="let todo of todos; let i = index">
+      {{ todo }}
+      <button (click)="removeTodo(i)">X</button>
+    </li>
+  </ul>
+</div>

@@ -18,6 +18,7 @@ import { StudyGroupsComponent } from './study-groups/study-groups.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ProfileComponent } from './profile/profile.component';
 import { AboutComponent } from './about/about.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 
 const routes: Routes = [
@@ -39,7 +40,7 @@ const routes: Routes = [
 {path: 'quiz', component: QuizComponent},
 {path: 'profile', component: ProfileComponent},
 {path: 'about', component: AboutComponent},
-
+{path: 'to-do', component: TodoListComponent},
 ];
 
 @NgModule({
