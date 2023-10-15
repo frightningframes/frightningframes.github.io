@@ -1,10 +1,14 @@
 .tutor-image {
-    flex-basis: 20%;
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 5%;
-    margin-top: 20px;
-}
+    width: 15vw; /* Adjust the width as needed */
+    height: 20vh; /* Adjust the height as needed */
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+    margin-right: 2vw;
+    margin-top: 2vh;
+  }
 
 .papers-container {
     width: 80%;
@@ -111,7 +115,7 @@ h2 {
     align-items: center; /* Vertical alignment if needed */
   }
   button {
-    margin-left: px;
+    margin-top: 5px;
     border-radius: 7px;
     height: 6vh;
     width: 9vw;
@@ -128,10 +132,10 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
   
-  .title-container {
+.tutor-container {
+    position: relative;
     display: flex;
-    align-items: center;
-}
+  }
 
 .back-button {
     color: black;

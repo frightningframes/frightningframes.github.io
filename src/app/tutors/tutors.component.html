@@ -34,20 +34,21 @@
 
 <div class="papers-container">
     <div class="paper" *ngFor="let tutor of filteredGroups">
-        
+      <div class="tutor-container">
+        <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image">
         <div class="tutor-info">
-            <h2>{{ tutor.Module }} Tutor</h2>
-            <p><strong>Name:</strong> {{ tutor.name }}</p>
-            <p><strong>Rate:</strong> R{{ tutor.rate }}/hr</p>
-            <p><strong>Experience:</strong> {{ tutor.experience }} years</p>
-            <p><strong>Description:</strong> {{ tutor.description }}</p>
-            <button (click)="navigateToExternalURL()">Contact Tutor</button>
+          <h2>{{ tutor.Module }} Tutor</h2>
+          <p><strong>Name:</strong> {{ tutor.name }}</p>
+          <p><strong>Rate:</strong> R{{ tutor.rate }}/hr</p>
+          <p><strong>Experience:</strong> {{ tutor.experience }} years</p>
+          <p><strong>Description:</strong> {{ tutor.description }}</p>
+          <button (click)="navigateToExternalURL()">Contact Tutor</button>
         </div>
-        <!-- <img [src]="tutor.image" alt="{{ tutor.name }}" class="tutor-image"> -->
+      </div>
     </div>
     <div *ngIf="filteredGroups.length === 0" class="nomore">No tutors found!</div>
-</div>
-
+  </div>
+  
   
 
 
