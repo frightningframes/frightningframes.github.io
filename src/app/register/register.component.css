@@ -1,25 +1,169 @@
 body {
-    background: #C5D3FE;
-    height: 100vh;
-    /* width: 100vw; */
-    overflow: hidden;
+  background: #C5D3FE;
+  height: 100vh;
+  /* width: 100vw; */
+  overflow: hidden;
+}
+
+html {
+  overflow: hidden;
+}
+
+.bodyy {
+  background-color: #C5D3FE;
+  overflow: hidden;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  margin-top: -20px;
+}
+
+.floating-card {
+  display: flex;
+  width: 75vw;
+  height: 70vh;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.left-side {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center-align the title */
+.centered-title {
+  /* color: black; */
+  text-align: center;
+  font-size: 22px;
+  display: flex;
+  flex-grow: 1;
+  /* Expand and center the title within the available space */
+}
+
+.logo {
+  width: 55px;
+  /* Adjust the width as needed */
+  height: 55px;
+  /* Adjust the height as needed */
+  margin-right: 10px
+}
+
+.centered-title h1 {
+  margin: 0;
+  position: absolute;
+  /* transform: translate(-50%, -50%); */
+  font-family: 'Oswald', sans-serif;
+}
+
+.centered-title h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #556FFF;
+}
+
+.centered-title h1:nth-child(2) {
+  color:#556FFF;
+  animation: animate 4s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes animate{
+  0%, 100%
+  {
+    clip-path: polygon(0% 48%, 14% 45%, 26% 46%, 37% 52%, 45% 56%, 56% 62%, 68% 70%, 80% 71%, 93% 69%, 100% 61%, 100% 100%, 0 100%);
   }
-  
-  html {
-    overflow: hidden;
+  50%
+  {
+    clip-path: polygon(0% 48%, 7% 56%, 19% 62%, 30% 62%, 43% 57%, 53% 52%, 64% 48%, 80% 46%, 91% 46%, 100% 51%, 100% 100%, 0 100%);
   }
-  
-  h2 {
-    margin-bottom: 50px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    margin-top: 0px;
-  }
+}
+
+.right-side {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+form {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  padding-left: 20px;
+  width: 25vw;
+  margin-left: 2vw;
+  font-family: 'Oswald', sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+border-radius: 5px;
+background: #556FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 20vw;
+  align-items: center;
+  margin-left: 6vw;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 20px;
+}
+
+img {
+  height: 100%;
+}
+
+#emailError {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Update input styles to highlight invalid email */
+#email:invalid {
+  border-color: red;
+}
 
   p {
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
-    margin-left: 15px;
+    margin-left: 30px;
   }
 
   a {
@@ -33,89 +177,12 @@ body {
     font-weight: bold; /* Make the text bold on hover */
     transform: translateY(-2px); /* Lift the text by 2 pixels on hover */
 }
-  
-  .floating-card {
-    display: flex;
-    width: 75vw;
-    height: 70vh;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-  }
-  
-  .left-side {
-    flex: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .right-side {
-    flex: 1;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-  form {
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 10px;
-  }
 
-  
-  
-  
-  input[type="email"],
-  input[type="password"] {
-    padding: 10px;
-    margin-top: 0;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    font-size: 16px;
-    padding-left: 20px;
-    width: 25vw;
-    margin-left: 2vw;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  button {
-    padding: 10px 20px;
-  border-radius: 5px;
-  background: #556FFF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #fff;
-    border: none;
-    border-radius: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    width: 20vw;
-    align-items: center;
-    margin-left: 5.5vw;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 20px;
-  }
-  
-  img {
-    height: 100%;
-  }
+.logo-heading{
+  margin: 6% 0;
+}
 
-  .error-message {
+.error-message {
   color: red;
   font-size: 14px;
   margin-top: 5px;

@@ -10,40 +10,43 @@
   <!-- <title>Your Page Title</title> -->
 </head>
 
-<body style="margin:0;" >
+<body style="margin:0;">
   <div class="bodyy">
     <div class="floating-card">
-      
       <!-- <button class="close-button" (click)="closeCard()">X</button> -->
       <div class="left-side">
-        <h2>ScholarSphere</h2>
+        <a href="/home" class="logo-heading">
+          <div class="centered-title">
+              <img src="assets/LogoTrans.png" alt="Your Logo" class="logo">
+              <div>
+              <h1>ScholarSphere</h1>
+              <h1>ScholarSphere</h1>
+              </div>
+          </div>
+          </a>
     
-      <!-- Add this <div> for password mismatch error message -->
-<div *ngIf="passwordMismatchError" class="error-message">Passwords do not match</div>
-
-<form (ngSubmit)="registerUser()" #loginForm="ngForm">
-    <!-- Username input -->
-    <input class="one" type="email" [(ngModel)]="username" name="username" placeholder="Enter your email" required>
-
-    <input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required>
-    <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
-
-    <!-- Display the error message for empty fields -->
-    <div *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touched)" class="error-message">Please fill in all fields</div>
-
-    <!-- Display the password mismatch error message -->
-    <div *ngIf="passwordMismatchError" class="error-message">Passwords do not match</div>
-
-    <div *ngIf="registrationSuccess" style="color: green;">Registration successful!</div>
-
-    <!-- Login button -->
-    <button type="submit" [disabled]="loginForm.invalid">Register</button>
-</form>
-
+          <form (ngSubmit)="registerUser()" #loginForm="ngForm">
+            <!-- Username input -->
+            <input class="one" type="email" [(ngModel)]="username" name="username" placeholder="Enter your email" required>
+        
+            <input type="password" [(ngModel)]="password" name="password" placeholder="Enter your password" required>
+            <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+        
+            <!-- Display the error message for empty fields -->
+            <div *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touched)" class="error-message">Please fill in all fields</div>
+        
+            <!-- Display the password mismatch error message -->
+            <div *ngIf="passwordMismatchError" class="error-message">Passwords do not match</div>
+        
+            <div *ngIf="registrationSuccess" style="color: green;">Registration successful!</div>
+        
+            <!-- Login button -->
+            <button type="submit" [disabled]="loginForm.invalid">Register</button>
+        </form>
     
+        <!-- Registration link -->
         <p>Already have an account? <a routerLink="/login">Login</a></p>
-    
-      </div>
+    </div>
     
     
       <div class="right-side">
