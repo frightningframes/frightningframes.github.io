@@ -147,12 +147,6 @@ nav a {
   box-shadow: 0 0 10px #556FFF, 0 0 40px #556FFF, 0 0 80px #556FFF;
 }
 
-/* button:hover{
-  color: #255784;
-  background: #556FFF;
-  box-shadow: 0 0 10px #556FFF, 0 0 40px #556FFF, 0 0 80px #556FFF;
-  transition-delay: 1s;
-} */
 
 button span{
   position: absolute;
@@ -208,4 +202,27 @@ button:hover span:nth-child(4){
   bottom:100%;
   transition: 1s;
   transition-delay: 0.75s;
+}
+
+.centered-title:hover img.logo {
+  transform: scale(1.1); /* Increase the size when hovered */
+  transition: transform 0.3s ease;
+}
+
+.centered-title h1:hover {
+  color: #556FFF; /* Change the text color when hovered */
+  transition: color 0.3s ease;
+}
+
+/* Restyle the links in the header when hovered */
+.right-links a:hover {
+  color: #556FFF; /* Change the text color when hovered */
+  transition: color 0.3s ease;
+}
+
+.pagebut:hover {
+  background: #556FFF; /* Change the background color when hovered */
+  color: white; /* Change text color to white when hovered */
+  box-shadow: 0 0 10px #556FFF, 0 0 40px #556FFF, 0 0 80px #556FFF; /* Add a box shadow when hovered */
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
